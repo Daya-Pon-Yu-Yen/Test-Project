@@ -28,8 +28,8 @@ class LoggerDataCollectorTest extends TestCase
         $compilerLogs = $c->getCompilerLogs()->getValue('message');
 
         $this->assertSame(array(
-            array('message' => 'Removed service "Psr\Container\ContainerInterface"; reason: private alias.'),
-            array('message' => 'Removed service "Symfony\Component\DependencyInjection\ContainerInterface"; reason: private alias.'),
+            array('message' => 'Removed Service "Psr\Container\ContainerInterface"; reason: private alias.'),
+            array('message' => 'Removed Service "Symfony\Component\DependencyInjection\ContainerInterface"; reason: private alias.'),
         ), $compilerLogs['Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass']);
 
         $this->assertSame(array(

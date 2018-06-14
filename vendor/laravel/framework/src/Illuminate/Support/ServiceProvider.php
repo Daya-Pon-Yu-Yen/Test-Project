@@ -35,7 +35,7 @@ abstract class ServiceProvider
     protected static $publishGroups = [];
 
     /**
-     * Create a new service provider instance.
+     * Create a new Service provider instance.
      *
      * @param  \Illuminate\Contracts\Foundation\Application $app
      * @return void
@@ -134,7 +134,7 @@ abstract class ServiceProvider
     }
 
     /**
-     * Ensure the publish array for the service provider is initialized.
+     * Ensure the publish array for the Service provider is initialized.
      *
      * @param  string  $class
      * @return void
@@ -147,7 +147,7 @@ abstract class ServiceProvider
     }
 
     /**
-     * Add a publish group / tag to the service provider.
+     * Add a publish group / tag to the Service provider.
      *
      * @param  string  $group
      * @param  array  $paths
@@ -244,7 +244,7 @@ abstract class ServiceProvider
     }
 
     /**
-     * Get the events that trigger this service provider to register.
+     * Get the events that trigger this Service provider to register.
      *
      * @return array
      */

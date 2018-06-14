@@ -48,7 +48,7 @@ class SudoCommand extends Command
     }
 
     /**
-     * Set the Shell's Readline service.
+     * Set the Shell's Readline Service.
      *
      * @param Readline $readline
      */

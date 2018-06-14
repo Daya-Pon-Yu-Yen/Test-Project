@@ -32,11 +32,11 @@ class ObjectRouteLoaderTest extends TestCase
 
         $actualRoutes = $loader->load(
             'my_route_provider_service:loadRoutes',
-            'service'
+            'Service'
         );
 
         $this->assertSame($collection, $actualRoutes);
-        // the service file should be listed as a resource
+        // the Service file should be listed as a resource
         $this->assertNotEmpty($actualRoutes->getResources());
     }
 

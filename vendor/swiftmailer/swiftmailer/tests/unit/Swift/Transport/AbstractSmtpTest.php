@@ -67,10 +67,10 @@ abstract class Swift_Transport_AbstractSmtpTest extends \SwiftMailerTestCase
          received it, the client normally sends the EHLO command to the
          server, indicating the client's identity.  In addition to opening the
          session, use of EHLO indicates that the client is able to process
-         service extensions and requests that the server provide a list of the
+         Service extensions and requests that the server provide a list of the
          extensions it supports.  Older SMTP systems which are unable to
-         support service extensions and contemporary clients which do not
-         require service extensions in the mail session being initiated, MAY
+         support Service extensions and contemporary clients which do not
+         require Service extensions in the mail session being initiated, MAY
          use HELO instead of EHLO.  Servers MUST NOT return the extended
          EHLO-style response to a HELO command.  For a particular connection
          attempt, if the server returns a "command not recognized" response to
@@ -78,7 +78,7 @@ abstract class Swift_Transport_AbstractSmtpTest extends \SwiftMailerTestCase
 
          In the EHLO command the host sending the command identifies itself;
          the command may be interpreted as saying "Hello, I am <domain>" (and,
-         in the case of EHLO, "and I support service extension requests").
+         in the case of EHLO, "and I support Service extension requests").
 
        -- RFC 2281, 4.1.1.1.
 
@@ -664,7 +664,7 @@ abstract class Swift_Transport_AbstractSmtpTest extends \SwiftMailerTestCase
         /* -- RFC 2821, 3.3.
 
         The third step in the procedure is the DATA command (or some
-        alternative specified in a service extension).
+        alternative specified in a Service extension).
 
                     DATA <CRLF>
 

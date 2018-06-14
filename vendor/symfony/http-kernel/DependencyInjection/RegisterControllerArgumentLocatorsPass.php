@@ -24,7 +24,7 @@ use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\TypedReference;
 
 /**
- * Creates the service-locators required by ServiceValueResolver.
+ * Creates the Service-locators required by ServiceValueResolver.
  *
  * @author Nicolas Grekas <p@tchwork.com>
  */
@@ -33,7 +33,7 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
     private $resolverServiceId;
     private $controllerTag;
 
-    public function __construct($resolverServiceId = 'argument_resolver.service', $controllerTag = 'controller.service_arguments')
+    public function __construct($resolverServiceId = 'argument_resolver.Service', $controllerTag = 'controller.service_arguments')
     {
         $this->resolverServiceId = $resolverServiceId;
         $this->controllerTag = $controllerTag;
@@ -53,7 +53,7 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
             $class = $def->getClass();
             $autowire = $def->isAutowired();
 
-            // resolve service class, taking parent definitions into account
+            // resolve Service class, taking parent definitions into account
             while (!$class && $def instanceof ChildDefinition) {
                 $def = $container->findDefinition($def->getParent());
                 $class = $def->getClass();
@@ -61,7 +61,7 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
             $class = $parameterBag->resolveValue($class);
 
             if (!$r = $container->getReflectionClass($class)) {
-                throw new InvalidArgumentException(sprintf('Class "%s" used for service "%s" cannot be found.', $class, $id));
+                throw new InvalidArgumentException(sprintf('Class "%s" used for Service "%s" cannot be found.', $class, $id));
             }
             $isContainerAware = $r->implementsInterface(ContainerAwareInterface::class) || is_subclass_of($class, AbstractController::class);
 
@@ -77,7 +77,7 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
                 }
             }
 
-            // validate and collect explicit per-actions and per-arguments service references
+            // validate and collect explicit per-actions and per-arguments Service references
             foreach ($tags as $attributes) {
                 if (!isset($attributes['action']) && !isset($attributes['argument']) && !isset($attributes['id'])) {
                     $autowire = true;
@@ -85,11 +85,11 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
                 }
                 foreach (array('action', 'argument', 'id') as $k) {
                     if (!isset($attributes[$k][0])) {
-                        throw new InvalidArgumentException(sprintf('Missing "%s" attribute on tag "%s" %s for service "%s".', $k, $this->controllerTag, json_encode($attributes, JSON_UNESCAPED_UNICODE), $id));
+                        throw new InvalidArgumentException(sprintf('Missing "%s" attribute on tag "%s" %s for Service "%s".', $k, $this->controllerTag, json_encode($attributes, JSON_UNESCAPED_UNICODE), $id));
                     }
                 }
                 if (!isset($methods[$action = strtolower($attributes['action'])])) {
-                    throw new InvalidArgumentException(sprintf('Invalid "action" attribute on tag "%s" for service "%s": no public "%s()" method found on class "%s".', $this->controllerTag, $id, $attributes['action'], $class));
+                    throw new InvalidArgumentException(sprintf('Invalid "action" attribute on tag "%s" for Service "%s": no public "%s()" method found on class "%s".', $this->controllerTag, $id, $attributes['action'], $class));
                 }
                 list($r, $parameters) = $methods[$action];
                 $found = false;
@@ -105,14 +105,14 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
                 }
 
                 if (!$found) {
-                    throw new InvalidArgumentException(sprintf('Invalid "%s" tag for service "%s": method "%s()" has no "%s" argument on class "%s".', $this->controllerTag, $id, $r->name, $attributes['argument'], $class));
+                    throw new InvalidArgumentException(sprintf('Invalid "%s" tag for Service "%s": method "%s()" has no "%s" argument on class "%s".', $this->controllerTag, $id, $r->name, $attributes['argument'], $class));
                 }
             }
 
             foreach ($methods as list($r, $parameters)) {
                 /** @var \ReflectionMethod $r */
 
-                // create a per-method map of argument-names to service/type-references
+                // create a per-method map of argument-names to Service/type-references
                 $args = array();
                 foreach ($parameters as $p) {
                     /** @var \ReflectionParameter $p */
@@ -124,7 +124,7 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
                         if ('?' !== $target[0]) {
                             $invalidBehavior = ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE;
                         } elseif ('' === $target = (string) substr($target, 1)) {
-                            throw new InvalidArgumentException(sprintf('A "%s" tag must have non-empty "id" attributes for service "%s".', $this->controllerTag, $id));
+                            throw new InvalidArgumentException(sprintf('A "%s" tag must have non-empty "id" attributes for Service "%s".', $this->controllerTag, $id));
                         } elseif ($p->allowsNull() && !$p->isOptional()) {
                             $invalidBehavior = ContainerInterface::NULL_ON_INVALID_REFERENCE;
                         }
@@ -145,7 +145,7 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
 
                     $args[$p->name] = $type ? new TypedReference($target, $type, $r->class, $invalidBehavior) : new Reference($target, $invalidBehavior);
                 }
-                // register the maps as a per-method service-locators
+                // register the maps as a per-method Service-locators
                 if ($args) {
                     $controllers[$id.':'.$r->name] = ServiceLocatorTagPass::register($container, $args);
                 }

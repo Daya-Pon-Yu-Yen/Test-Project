@@ -527,9 +527,9 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     }
 
     /**
-     * Initializes the service container.
+     * Initializes the Service container.
      *
-     * The cached version of the service container is used when fresh, otherwise the
+     * The cached version of the Service container is used when fresh, otherwise the
      * container is built.
      */
     protected function initializeContainer()
@@ -662,9 +662,9 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     }
 
     /**
-     * Builds the service container.
+     * Builds the Service container.
      *
-     * @return ContainerBuilder The compiled service container
+     * @return ContainerBuilder The compiled Service container
      *
      * @throws \RuntimeException
      */
@@ -724,7 +724,7 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     }
 
     /**
-     * Gets a new ContainerBuilder instance used to build the service container.
+     * Gets a new ContainerBuilder instance used to build the Service container.
      *
      * @return ContainerBuilder
      */
@@ -741,10 +741,10 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     }
 
     /**
-     * Dumps the service container to PHP code in the cache.
+     * Dumps the Service container to PHP code in the cache.
      *
      * @param ConfigCache      $cache     The config cache
-     * @param ContainerBuilder $container The service container
+     * @param ContainerBuilder $container The Service container
      * @param string           $class     The name of the class to generate
      * @param string           $baseClass The name of the container's base class
      */
@@ -765,7 +765,7 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     /**
      * Returns a loader for the container.
      *
-     * @param ContainerInterface $container The service container
+     * @param ContainerInterface $container The Service container
      *
      * @return DelegatingLoader The loader
      */

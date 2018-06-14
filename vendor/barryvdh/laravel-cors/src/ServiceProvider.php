@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider
     protected $defer = false;
 
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

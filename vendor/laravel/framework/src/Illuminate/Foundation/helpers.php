@@ -650,7 +650,7 @@ if (! function_exists('request')) {
 
 if (! function_exists('resolve')) {
     /**
-     * Resolve a service from the container.
+     * Resolve a Service from the container.
      *
      * @param  string  $name
      * @return mixed

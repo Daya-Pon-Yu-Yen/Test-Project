@@ -28,7 +28,7 @@ class FragmentRendererPassTest extends TestCase
      */
     public function testContentRendererWithoutInterface()
     {
-        // one service, not implementing any interface
+        // one Service, not implementing any interface
         $services = array(
             'my_content_renderer' => array(array('alias' => 'foo')),
         );

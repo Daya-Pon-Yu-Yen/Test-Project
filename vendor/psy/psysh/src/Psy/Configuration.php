@@ -518,7 +518,7 @@ class Configuration
     }
 
     /**
-     * Set the Psy Shell readline service.
+     * Set the Psy Shell readline Service.
      *
      * @param Readline $readline
      */
@@ -528,9 +528,9 @@ class Configuration
     }
 
     /**
-     * Get the Psy Shell readline service.
+     * Get the Psy Shell readline Service.
      *
-     * By default, this service uses (in order of preference):
+     * By default, this Service uses (in order of preference):
      *
      *  * GNU Readline
      *  * Libedit
@@ -735,7 +735,7 @@ class Configuration
     }
 
     /**
-     * Set a CodeCleaner service instance.
+     * Set a CodeCleaner Service instance.
      *
      * @param CodeCleaner $cleaner
      */
@@ -745,7 +745,7 @@ class Configuration
     }
 
     /**
-     * Get a CodeCleaner service instance.
+     * Get a CodeCleaner Service instance.
      *
      * If none has been explicitly defined, this will create a new instance.
      *
@@ -784,7 +784,7 @@ class Configuration
     }
 
     /**
-     * Set the Shell Output service.
+     * Set the Shell Output Service.
      *
      * @param ShellOutput $output
      */
@@ -794,7 +794,7 @@ class Configuration
     }
 
     /**
-     * Get a Shell Output service instance.
+     * Get a Shell Output Service instance.
      *
      * If none has been explicitly provided, this will create a new instance
      * with VERBOSITY_NORMAL and the output page supplied by self::getPager
@@ -818,7 +818,7 @@ class Configuration
     }
 
     /**
-     * Get the decoration (i.e. color) setting for the Shell Output service.
+     * Get the decoration (i.e. color) setting for the Shell Output Service.
      *
      * @return null|bool 3-state boolean corresponding to the current color mode
      */
@@ -834,7 +834,7 @@ class Configuration
     }
 
     /**
-     * Set the OutputPager service.
+     * Set the OutputPager Service.
      *
      * If a string is supplied, a ProcOutputPager will be used which shells out
      * to the specified command.
@@ -876,7 +876,7 @@ class Configuration
     }
 
     /**
-     * Set the Shell evaluation Loop service.
+     * Set the Shell evaluation Loop Service.
      *
      * @param Loop $loop
      */
@@ -886,7 +886,7 @@ class Configuration
     }
 
     /**
-     * Get a Shell evaluation Loop service instance.
+     * Get a Shell evaluation Loop Service instance.
      *
      * If none has been explicitly defined, this will create a new instance.
      * If Pcntl is available and enabled, the new instance will be a ForkingLoop.
@@ -907,7 +907,7 @@ class Configuration
     }
 
     /**
-     * Set the Shell autocompleter service.
+     * Set the Shell autocompleter Service.
      *
      * @param AutoCompleter $completer
      */
@@ -917,7 +917,7 @@ class Configuration
     }
 
     /**
-     * Get an AutoCompleter service instance.
+     * Get an AutoCompleter Service instance.
      *
      * @return AutoCompleter
      */
@@ -1065,7 +1065,7 @@ class Configuration
     }
 
     /**
-     * Get the Presenter service.
+     * Get the Presenter Service.
      *
      * @return Presenter
      */
@@ -1138,7 +1138,7 @@ class Configuration
     }
 
     /**
-     * Set an update checker service instance.
+     * Set an update checker Service instance.
      *
      * @param Checker $checker
      */
@@ -1148,7 +1148,7 @@ class Configuration
     }
 
     /**
-     * Get an update checker service instance.
+     * Get an update checker Service instance.
      *
      * If none has been explicitly defined, this will create a new instance.
      *

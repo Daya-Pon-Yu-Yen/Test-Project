@@ -44,10 +44,10 @@ class LazyLoadingFragmentHandler extends FragmentHandler
     }
 
     /**
-     * Adds a service as a fragment renderer.
+     * Adds a Service as a fragment renderer.
      *
-     * @param string $name     The service name
-     * @param string $renderer The render service id
+     * @param string $name     The Service name
+     * @param string $renderer The render Service id
      *
      * @deprecated since version 3.3, to be removed in 4.0
      */

@@ -17,7 +17,7 @@ class MigrationServiceProvider extends ServiceProvider
     protected $defer = true;
 
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */
@@ -31,7 +31,7 @@ class MigrationServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the migration repository service.
+     * Register the migration repository Service.
      *
      * @return void
      */
@@ -45,7 +45,7 @@ class MigrationServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the migrator service.
+     * Register the migrator Service.
      *
      * @return void
      */

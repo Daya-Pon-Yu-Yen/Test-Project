@@ -72,7 +72,7 @@ class File extends Base
         'application/vnd.dreamfactory'                                              => 'dfac',
         'application/vnd.ds-keypoint'                                               => 'kpxx',
         'application/vnd.dvb.ait'                                                   => 'ait',
-        'application/vnd.dvb.service'                                               => 'svc',
+        'application/vnd.dvb.Service'                                               => 'svc',
         'application/vnd.dynageo'                                                   => 'geo',
         'application/vnd.ecowin.chart'                                              => 'mag',
         'application/vnd.enliven'                                                   => 'nml',

@@ -17,7 +17,7 @@ use phpDocumentor\Reflection\Types\Context as TypeContext;
 interface TagFactory
 {
     /**
-     * Adds a parameter to the service locator that can be injected in a tag's factory method.
+     * Adds a parameter to the Service locator that can be injected in a tag's factory method.
      *
      * When calling a tag's "create" method we always check the signature for dependencies to inject. One way is to
      * typehint a parameter in the signature so that we can use that interface or class name to inject a dependency
@@ -42,13 +42,13 @@ interface TagFactory
     public function addParameter($name, $value);
 
     /**
-     * Registers a service with the Service Locator using the FQCN of the class or the alias, if provided.
+     * Registers a Service with the Service Locator using the FQCN of the class or the alias, if provided.
      *
      * When calling a tag's "create" method we always check the signature for dependencies to inject. If a parameter
      * has a typehint then the ServiceLocator is queried to see if a Service is registered for that typehint.
      *
      * Because interfaces are regularly used as type-hints this method provides an alias parameter; if the FQCN of the
-     * interface is passed as alias then every time that interface is requested the provided service will be returned.
+     * interface is passed as alias then every time that interface is requested the provided Service will be returned.
      *
      * @param object $service
      * @param string $alias

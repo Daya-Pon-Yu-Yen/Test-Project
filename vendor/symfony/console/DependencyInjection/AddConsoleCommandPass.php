@@ -33,10 +33,10 @@ class AddConsoleCommandPass implements CompilerPassInterface
             $class = $container->getParameterBag()->resolveValue($definition->getClass());
 
             if (!$r = $container->getReflectionClass($class)) {
-                throw new InvalidArgumentException(sprintf('Class "%s" used for service "%s" cannot be found.', $class, $id));
+                throw new InvalidArgumentException(sprintf('Class "%s" used for Service "%s" cannot be found.', $class, $id));
             }
             if (!$r->isSubclassOf(Command::class)) {
-                throw new InvalidArgumentException(sprintf('The service "%s" tagged "console.command" must be a subclass of "%s".', $id, Command::class));
+                throw new InvalidArgumentException(sprintf('The Service "%s" tagged "console.command" must be a subclass of "%s".', $id, Command::class));
             }
 
             $commandId = 'console.command.'.strtolower(str_replace('\\', '_', $class));

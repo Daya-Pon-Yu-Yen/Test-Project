@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 class EncryptionServiceProvider extends ServiceProvider
 {
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

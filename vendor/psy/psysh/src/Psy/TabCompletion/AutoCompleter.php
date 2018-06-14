@@ -14,7 +14,7 @@ namespace Psy\TabCompletion;
 use Psy\TabCompletion\Matcher\AbstractMatcher;
 
 /**
- * A readline tab completion service.
+ * A readline tab completion Service.
  *
  * @author Marc Garcia <markcial@gmail.com>
  */

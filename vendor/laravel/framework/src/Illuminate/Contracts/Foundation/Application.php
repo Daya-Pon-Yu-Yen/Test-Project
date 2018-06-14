@@ -42,7 +42,7 @@ interface Application extends Container
     public function registerConfiguredProviders();
 
     /**
-     * Register a service provider with the application.
+     * Register a Service provider with the application.
      *
      * @param  \Illuminate\Support\ServiceProvider|string  $provider
      * @param  array  $options
@@ -52,7 +52,7 @@ interface Application extends Container
     public function register($provider, $options = [], $force = false);
 
     /**
-     * Register a deferred provider and service.
+     * Register a deferred provider and Service.
      *
      * @param  string  $provider
      * @param  string  $service
@@ -61,7 +61,7 @@ interface Application extends Container
     public function registerDeferredProvider($provider, $service = null);
 
     /**
-     * Boot the application's service providers.
+     * Boot the application's Service providers.
      *
      * @return void
      */

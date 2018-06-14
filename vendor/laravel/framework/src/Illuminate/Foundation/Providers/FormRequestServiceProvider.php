@@ -11,7 +11,7 @@ use Illuminate\Contracts\Validation\ValidatesWhenResolved;
 class FormRequestServiceProvider extends ServiceProvider
 {
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

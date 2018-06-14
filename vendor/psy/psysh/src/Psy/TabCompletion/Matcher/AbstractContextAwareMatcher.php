@@ -17,7 +17,7 @@ use Psy\ContextAware;
 /**
  * An abstract tab completion Matcher which implements ContextAware.
  *
- * The AutoCompleter service will inject a Context instance into all
+ * The AutoCompleter Service will inject a Context instance into all
  * ContextAware Matchers.
  *
  * @author Marc Garcia <markcial@gmail.com>

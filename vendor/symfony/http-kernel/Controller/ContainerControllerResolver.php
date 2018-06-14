@@ -15,7 +15,7 @@ use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 
 /**
- * A controller resolver searching for a controller in a psr-11 container when using the "service:method" notation.
+ * A controller resolver searching for a controller in a psr-11 container when using the "Service:method" notation.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  * @author Maxime Steinhausser <maxime.steinhausser@gmail.com>
@@ -48,14 +48,14 @@ class ContainerControllerResolver extends ControllerResolver
         }
 
         if (1 == substr_count($controller, ':')) {
-            // controller in the "service:method" notation
+            // controller in the "Service:method" notation
             list($service, $method) = explode(':', $controller, 2);
 
             return array($this->container->get($service), $method);
         }
 
         if ($this->container->has($controller) && method_exists($service = $this->container->get($controller), '__invoke')) {
-            // invokable controller in the "service" notation
+            // invokable controller in the "Service" notation
             return $service;
         }
 

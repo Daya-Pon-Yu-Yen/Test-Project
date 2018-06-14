@@ -78,7 +78,7 @@ class TransportManager extends Manager
     protected function createSesDriver()
     {
         $config = array_merge($this->app['config']->get('services.ses', []), [
-            'version' => 'latest', 'service' => 'email',
+            'version' => 'latest', 'Service' => 'email',
         ]);
 
         return new SesTransport(new SesClient(

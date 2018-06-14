@@ -33,7 +33,7 @@ class ContainerAwareEventDispatcher extends EventDispatcher
     private $container;
 
     /**
-     * The service IDs of the event listeners and subscribers.
+     * The Service IDs of the event listeners and subscribers.
      *
      * @var array
      */
@@ -65,10 +65,10 @@ class ContainerAwareEventDispatcher extends EventDispatcher
     }
 
     /**
-     * Adds a service as event listener.
+     * Adds a Service as event listener.
      *
      * @param string $eventName Event for which the listener is added
-     * @param array  $callback  The service ID of the listener service & the method
+     * @param array  $callback  The Service ID of the listener Service & the method
      *                          name that has to be called
      * @param int    $priority  The higher this value, the earlier an event listener
      *                          will be triggered in the chain.
@@ -81,7 +81,7 @@ class ContainerAwareEventDispatcher extends EventDispatcher
         @trigger_error(sprintf('The %s class is deprecated since version 3.3 and will be removed in 4.0. Use EventDispatcher with closure factories instead.', __CLASS__), E_USER_DEPRECATED);
 
         if (!is_array($callback) || 2 !== count($callback)) {
-            throw new \InvalidArgumentException('Expected an array("service", "method") argument');
+            throw new \InvalidArgumentException('Expected an array("Service", "method") argument');
         }
 
         $this->listenerIds[$eventName][] = array($callback[0], $callback[1], $priority);
@@ -153,10 +153,10 @@ class ContainerAwareEventDispatcher extends EventDispatcher
     }
 
     /**
-     * Adds a service as event subscriber.
+     * Adds a Service as event subscriber.
      *
-     * @param string $serviceId The service ID of the subscriber service
-     * @param string $class     The service's class name (which must implement EventSubscriberInterface)
+     * @param string $serviceId The Service ID of the subscriber Service
+     * @param string $class     The Service's class name (which must implement EventSubscriberInterface)
      */
     public function addSubscriberService($serviceId, $class)
     {

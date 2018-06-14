@@ -13,7 +13,7 @@ use Illuminate\Contracts\Routing\ResponseFactory as ResponseFactoryContract;
 class RoutingServiceProvider extends ServiceProvider
 {
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */
@@ -45,7 +45,7 @@ class RoutingServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the URL generator service.
+     * Register the URL generator Service.
      *
      * @return void
      */
@@ -93,7 +93,7 @@ class RoutingServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the Redirector service.
+     * Register the Redirector Service.
      *
      * @return void
      */

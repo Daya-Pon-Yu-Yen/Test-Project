@@ -69,7 +69,7 @@ class PasswordBrokerManager implements FactoryContract
 
         // The password broker uses a token repository to validate tokens and send user
         // password e-mails, as well as validating that password reset process as an
-        // aggregate service of sorts providing a convenient interface for resets.
+        // aggregate Service of sorts providing a convenient interface for resets.
         return new PasswordBroker(
             $this->createTokenRepository($config),
             $this->app['auth']->createUserProvider($config['provider'])

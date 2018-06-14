@@ -41,10 +41,10 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         ;
 
         $container = new Container();
-        $container->set('service.listener', $service);
+        $container->set('Service.listener', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'));
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'));
 
         $dispatcher->dispatch('onEvent', $event);
     }
@@ -74,10 +74,10 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         ;
 
         $container = new Container();
-        $container->set('service.subscriber', $service);
+        $container->set('Service.subscriber', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addSubscriberService('service.subscriber', 'Symfony\Component\EventDispatcher\Tests\SubscriberService');
+        $dispatcher->addSubscriberService('Service.subscriber', 'Symfony\Component\EventDispatcher\Tests\SubscriberService');
 
         $dispatcher->dispatch('onEvent', $event);
         $dispatcher->dispatch('onEventWithPriority', $event);
@@ -97,11 +97,11 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         ;
 
         $container = new Container();
-        $container->set('service.listener', $service);
+        $container->set('Service.listener', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'), 5);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'), 10);
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'), 5);
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'), 10);
 
         $dispatcher->dispatch('onEvent', $event);
     }
@@ -113,10 +113,10 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         $service = $this->getMockBuilder('Symfony\Component\EventDispatcher\Tests\Service')->getMock();
 
         $container = new Container();
-        $container->set('service.listener', $service);
+        $container->set('Service.listener', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'));
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'));
 
         $service
             ->expects($this->once())
@@ -136,10 +136,10 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         $service = $this->getMockBuilder('Symfony\Component\EventDispatcher\Tests\Service')->getMock();
 
         $container = new Container();
-        $container->set('service.listener', $service);
+        $container->set('Service.listener', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'));
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'));
 
         $listeners = $dispatcher->getListeners();
 
@@ -153,13 +153,13 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         $service = $this->getMockBuilder('Symfony\Component\EventDispatcher\Tests\Service')->getMock();
 
         $container = new Container();
-        $container->set('service.listener', $service);
+        $container->set('Service.listener', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'));
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'));
 
         $dispatcher->dispatch('onEvent', new Event());
-        $dispatcher->removeListener('onEvent', array($container->get('service.listener'), 'onEvent'));
+        $dispatcher->removeListener('onEvent', array($container->get('Service.listener'), 'onEvent'));
         $this->assertFalse($dispatcher->hasListeners('onEvent'));
     }
 
@@ -168,12 +168,12 @@ class ContainerAwareEventDispatcherTest extends AbstractEventDispatcherTest
         $service = $this->getMockBuilder('Symfony\Component\EventDispatcher\Tests\Service')->getMock();
 
         $container = new Container();
-        $container->set('service.listener', $service);
+        $container->set('Service.listener', $service);
 
         $dispatcher = new ContainerAwareEventDispatcher($container);
-        $dispatcher->addListenerService('onEvent', array('service.listener', 'onEvent'));
+        $dispatcher->addListenerService('onEvent', array('Service.listener', 'onEvent'));
 
-        $dispatcher->removeListener('onEvent', array($container->get('service.listener'), 'onEvent'));
+        $dispatcher->removeListener('onEvent', array($container->get('Service.listener'), 'onEvent'));
         $this->assertFalse($dispatcher->hasListeners('onEvent'));
     }
 }

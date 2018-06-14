@@ -44,7 +44,7 @@ class AddConsoleCommandPassTest extends TestCase
         } else {
             $id = $alias;
             // The alias is replaced by a Definition by the ReplaceAliasByActualDefinitionPass
-            // in case the original service is private
+            // in case the original Service is private
             $this->assertFalse($container->hasDefinition('my-command'));
             $this->assertTrue($container->hasDefinition($alias));
         }
@@ -63,7 +63,7 @@ class AddConsoleCommandPassTest extends TestCase
 
     /**
      * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage The service "my-command" tagged "console.command" must not be abstract.
+     * @expectedExceptionMessage The Service "my-command" tagged "console.command" must not be abstract.
      */
     public function testProcessThrowAnExceptionIfTheServiceIsAbstract()
     {
@@ -81,7 +81,7 @@ class AddConsoleCommandPassTest extends TestCase
 
     /**
      * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage The service "my-command" tagged "console.command" must be a subclass of "Symfony\Component\Console\Command\Command".
+     * @expectedExceptionMessage The Service "my-command" tagged "console.command" must be a subclass of "Symfony\Component\Console\Command\Command".
      */
     public function testProcessThrowAnExceptionIfTheServiceIsNotASubclassOfCommand()
     {

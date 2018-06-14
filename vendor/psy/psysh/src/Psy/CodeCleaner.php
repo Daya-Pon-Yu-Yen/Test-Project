@@ -40,7 +40,7 @@ use Psy\CodeCleaner\ValidFunctionNamePass;
 use Psy\Exception\ParseErrorException;
 
 /**
- * A service to clean up user input, detect parse errors before they happen,
+ * A Service to clean up user input, detect parse errors before they happen,
  * and generally work around issues with the PHP code evaluation experience.
  */
 class CodeCleaner

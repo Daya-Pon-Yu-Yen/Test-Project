@@ -243,7 +243,7 @@ abstract class Job
     }
 
     /**
-     * Get the service container instance.
+     * Get the Service container instance.
      *
      * @return \Illuminate\Container\Container
      */

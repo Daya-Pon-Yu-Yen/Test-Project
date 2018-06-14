@@ -27,7 +27,7 @@ class RegisterListenersPassTest extends TestCase
      */
     public function testEventSubscriberWithoutInterface()
     {
-        // one service, not implementing any interface
+        // one Service, not implementing any interface
         $services = array(
             'my_event_subscriber' => array(0 => array()),
         );
@@ -90,7 +90,7 @@ class RegisterListenersPassTest extends TestCase
 
     /**
      * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage The service "foo" tagged "kernel.event_listener" must not be abstract.
+     * @expectedExceptionMessage The Service "foo" tagged "kernel.event_listener" must not be abstract.
      */
     public function testAbstractEventListener()
     {
@@ -104,7 +104,7 @@ class RegisterListenersPassTest extends TestCase
 
     /**
      * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage The service "foo" tagged "kernel.event_subscriber" must not be abstract.
+     * @expectedExceptionMessage The Service "foo" tagged "kernel.event_subscriber" must not be abstract.
      */
     public function testAbstractEventSubscriber()
     {

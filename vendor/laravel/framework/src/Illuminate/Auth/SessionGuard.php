@@ -50,7 +50,7 @@ class SessionGuard implements StatefulGuard, SupportsBasicAuth
     protected $session;
 
     /**
-     * The Illuminate cookie creator service.
+     * The Illuminate cookie creator Service.
      *
      * @var \Illuminate\Contracts\Cookie\QueueingFactory
      */

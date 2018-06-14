@@ -12,14 +12,14 @@ class AggregateServiceProvider extends ServiceProvider
     protected $providers = [];
 
     /**
-     * An array of the service provider instances.
+     * An array of the Service provider instances.
      *
      * @var array
      */
     protected $instances = [];
 
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

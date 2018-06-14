@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class ImageServiceProviderLumen extends ServiceProvider
 {
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

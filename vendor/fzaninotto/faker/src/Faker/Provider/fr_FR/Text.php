@@ -170,7 +170,7 @@ que le plus tard possible.
 
 Son père, M. Charles-Denis-Bartholomé Bovary, ancien aide-
 chirurgien-major, compromis, vers 1812, dans des affaires de
-conscription, et forcé, vers cette époque, de quitter le service,
+conscription, et forcé, vers cette époque, de quitter le Service,
 avait alors profité de ses avantages personnels pour saisir au
 passage une dot de soixante mille francs, qui s'offrait en la
 fille d'un marchand bonnetier, devenue amoureuse de sa tournure.
@@ -1203,7 +1203,7 @@ immédiatement sur la cour, où se trouvait l'écurie, une grande
 pièce délabrée qui avait un four, et qui servait maintenant de
 bûcher, de cellier, de garde-magasin, pleine de vieilles
 ferrailles, de tonneaux vides, d'instruments de culture hors de
-service, avec quantité d'autres choses poussiéreuses dont il était
+Service, avec quantité d'autres choses poussiéreuses dont il était
 impossible de deviner l'usage.
 
 Le jardin, plus long que large, allait, entre deux murs de bauge
@@ -2292,7 +2292,7 @@ apportait une botte de paille et la jetait, comme elle le pouvait,
 dans la mangeoire.
 
 Pour remplacer Nastasie (qui enfin partit de Tostes, en versant
-des ruisseaux de larmes), Emma prit à son service une jeune fille
+des ruisseaux de larmes), Emma prit à son Service une jeune fille
 de quatorze ans, orpheline et de physionomie douce. Elle lui
 interdit les bonnets de coton, lui apprit qu'il fallait vous
 parler à la troisième personne, apporter un verre d'eau dans une
@@ -2933,7 +2933,7 @@ noir entra tout à coup dans la cuisine. On distinguait, aux
 dernières lueurs du crépuscule, qu'il avait la figure rubiconde et
 le corps athlétique.
 
--- Qu'y a-t-il pour votre service, monsieur le curé? demanda la
+-- Qu'y a-t-il pour votre Service, monsieur le curé? demanda la
 maîtresse d'auberge, tout en atteignant sur la cheminée un des
 flambeaux de cuivre qui s'y trouvaient rangés en colonnade avec
 leurs chandelles; voulez-vous prendre quelque chose? un doigt de
@@ -3043,7 +3043,7 @@ où il s'était endormi complètement dès que la nuit était venue.
 
 Homais se présenta; il offrit ses hommages à Madame, ses civilités
 à Monsieur, dit qu'il était charmé d'avoir pu leur rendre quelque
-service, et ajouta d'un air cordial qu'il avait osé s'inviter lui-
+Service, et ajouta d'un air cordial qu'il avait osé s'inviter lui-
 même, sa femme d'ailleurs étant absente.
 
 Madame Bovary, quand elle fut dans la cuisine, s'approcha de la
@@ -6129,7 +6129,7 @@ faisait frissonner leurs lèvres sèches; et mollement, sans effort,
 leurs doigts se confondirent.
 
 «Catherine-Nicaise-Élisabeth Leroux, de Sassetot-la-Guerrière,
-pour cinquante-quatre ans de service dans la même ferme, une
+pour cinquante-quatre ans de Service dans la même ferme, une
 médaille d'argent -- du prix de vingt-cinq francs!»
 
 «Où est-elle, Catherine Leroux?» répéta le Conseiller.
@@ -6191,7 +6191,7 @@ femme, il répétait d'un ton paternel:
 
 Et il se mit là lui crier dans l'oreille:
 
--- Cinquante-quatre ans de service! Une médaille d'argent! Vingt-
+-- Cinquante-quatre ans de Service! Une médaille d'argent! Vingt-
 cinq francs! C'est pour vous.
 
 Puis, quand elle eut sa médaille, elle la considéra. Alors un
@@ -7923,7 +7923,7 @@ somme convenue, vous vouliez prendre...
 napoléons.
 
 Le marchand fut stupéfait. Alors, pour dissimuler son
-désappointement, il se répandit en excuses et en offres de service
+désappointement, il se répandit en excuses et en offres de Service
 qu'Emma refusa toutes; puis elle resta quelques minutes palpant
 dans la poche de son tablier les deux pièces de cent sous qu'il
 lui avait rendues. Elle se promettait d'économiser, afin de rendre
@@ -8892,7 +8892,7 @@ plus dodu, et gros à faire craquer le sac.
 Tout, d'ailleurs, lui réussissait. Il était adjudicataire d'une
 fourniture de cidre pour l'hôpital de Neufchâtel; M. Guillaumin
 lui promettait des actions dans les tourbières de Grumesnil, et il
-rêvait d'établir un nouveau service de diligences entre Argueil et
+rêvait d'établir un nouveau Service de diligences entre Argueil et
 Rouen, qui ne tarderait pas, sans doute, à ruiner la guimbarde du
 Lion d'or, et qui, marchant plus vite, étant à prix plus bas et
 portant plus de bagages, lui mettrait ainsi dans les mains tout le
@@ -11616,7 +11616,7 @@ mille francs chacun.
 Elle se récria, scandalisée.
 
 -- Mais, si je vous donne le surplus, répondit effrontément
-M. Lheureux, n'est-ce pas vous rendre service, à vous?
+M. Lheureux, n'est-ce pas vous rendre Service, à vous?
 
 Et, prenant une plume, il écrivit au bas du mémoire: «Reçu de
 madame Bovary quatre mille francs.»
@@ -12726,7 +12726,7 @@ Et ils allèrent dans leur chambre, à l'hôtel de Boulogne.
 Elle but en arrivant un grand verre d'eau. Elle était très pâle.
 Elle lui dit:
 
--- Léon, tu vas me rendre un service.
+-- Léon, tu vas me rendre un Service.
 
 Et, le secouant par ses deux mains, qu'elle serrait étroitement,
 elle ajouta:
@@ -13277,7 +13277,7 @@ reculait instinctivement, la croyant folle. Tout à coup elle se
 frappa le front, poussa un cri, car le souvenir de Rodolphe, comme
 un grand éclair dans une nuit sombre, lui avait passé dans l'âme.
 Il était si bon, si délicat, si généreux! Et, d'ailleurs, s'il
-hésitait à lui rendre ce service, elle saurait bien l'y
+hésitait à lui rendre ce Service, elle saurait bien l'y
 contraindre en rappelant d'un seul clin d'oeil leur amour perdu.
 Elle partit donc vers la Huchette, sans s'apercevoir qu'elle
 courait s'offrir à ce qui l'avait tantôt si fort exaspérée, ni se

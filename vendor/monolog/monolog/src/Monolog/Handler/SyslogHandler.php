@@ -14,7 +14,7 @@ namespace Monolog\Handler;
 use Monolog\Logger;
 
 /**
- * Logs to syslog service.
+ * Logs to syslog Service.
  *
  * usage example:
  *

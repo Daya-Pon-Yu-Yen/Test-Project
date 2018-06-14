@@ -21,7 +21,7 @@ class ImageServiceProvider extends ServiceProvider
     protected $provider;
 
     /**
-     * Create a new service provider instance.
+     * Create a new Service provider instance.
      *
      * @param  \Illuminate\Contracts\Foundation\Application  $app
      * @return void
@@ -46,7 +46,7 @@ class ImageServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

@@ -16,7 +16,7 @@ use Symfony\Component\VarDumper\Caster\Caster;
 use Symfony\Component\VarDumper\Cloner\Stub;
 
 /**
- * A Presenter service.
+ * A Presenter Service.
  */
 class Presenter
 {

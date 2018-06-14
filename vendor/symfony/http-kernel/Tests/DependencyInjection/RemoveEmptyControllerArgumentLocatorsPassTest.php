@@ -23,7 +23,7 @@ class RemoveEmptyControllerArgumentLocatorsPassTest extends TestCase
     public function testProcess()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('stdClass', 'stdClass');
         $container->register(parent::class, 'stdClass');
@@ -53,8 +53,8 @@ class RemoveEmptyControllerArgumentLocatorsPassTest extends TestCase
         $this->assertSame(array('bar'), array_keys($container->getDefinition((string) $controllers['c1:fooAction']->getValues()[0])->getArgument(0)));
 
         $expectedLog = array(
-            'Symfony\Component\HttpKernel\DependencyInjection\RemoveEmptyControllerArgumentLocatorsPass: Removing service-argument resolver for controller "c2:fooAction": no corresponding services exist for the referenced types.',
-            'Symfony\Component\HttpKernel\DependencyInjection\RemoveEmptyControllerArgumentLocatorsPass: Removing method "setTestCase" of service "c2" from controller candidates: the method is called at instantiation, thus cannot be an action.',
+            'Symfony\Component\HttpKernel\DependencyInjection\RemoveEmptyControllerArgumentLocatorsPass: Removing Service-argument resolver for controller "c2:fooAction": no corresponding services exist for the referenced types.',
+            'Symfony\Component\HttpKernel\DependencyInjection\RemoveEmptyControllerArgumentLocatorsPass: Removing method "setTestCase" of Service "c2" from controller candidates: the method is called at instantiation, thus cannot be an action.',
         );
 
         $this->assertSame($expectedLog, $container->getCompiler()->getLog());
@@ -63,7 +63,7 @@ class RemoveEmptyControllerArgumentLocatorsPassTest extends TestCase
     public function testSameIdClass()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register(RegisterTestController::class, RegisterTestController::class)
             ->addTag('controller.service_arguments')
@@ -82,7 +82,7 @@ class RemoveEmptyControllerArgumentLocatorsPassTest extends TestCase
     public function testInvoke()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('invokable', InvokableRegisterTestController::class)
             ->addTag('controller.service_arguments')
@@ -100,7 +100,7 @@ class RemoveEmptyControllerArgumentLocatorsPassTest extends TestCase
     public function testInvokeSameIdClass()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register(InvokableRegisterTestController::class, InvokableRegisterTestController::class)
             ->addTag('controller.service_arguments')

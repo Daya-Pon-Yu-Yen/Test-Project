@@ -30,7 +30,7 @@ use Webmozart\Assert\Assert;
  * > verify that a dependency is actually passed.
  *
  * This Factory also features a Service Locator component that is used to pass the right dependencies to the
- * `create` method of a tag; each dependency should be registered as a service or as a parameter.
+ * `create` method of a tag; each dependency should be registered as a Service or as a parameter.
  *
  * When you want to use a Tag of your own with custom handling you need to call the `registerTagHandler` method, pass
  * the name of the tag and a Fully Qualified Class Name pointing to a class that implements the Tag interface.

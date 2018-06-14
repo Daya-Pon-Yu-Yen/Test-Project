@@ -38,7 +38,7 @@ return array(
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
-    'App\\SeoModel' => $baseDir . '/app/SeoModel.php',
+    'App\\FiftyProductListRepository' => $baseDir . '/app/FiftyProductListRepository.phpepository.php',
     'App\\User' => $baseDir . '/app/User.php',
     'Barryvdh\\Cors\\CorsService' => $vendorDir . '/barryvdh/laravel-cors/src/CorsService.php',
     'Barryvdh\\Cors\\HandleCors' => $vendorDir . '/barryvdh/laravel-cors/src/HandleCors.php',

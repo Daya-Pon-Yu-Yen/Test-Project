@@ -25,12 +25,12 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
 {
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Class "Symfony\Component\HttpKernel\Tests\DependencyInjection\NotFound" used for service "foo" cannot be found.
+     * @expectedExceptionMessage Class "Symfony\Component\HttpKernel\Tests\DependencyInjection\NotFound" used for Service "foo" cannot be found.
      */
     public function testInvalidClass()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', NotFound::class)
             ->addTag('controller.service_arguments')
@@ -42,12 +42,12 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
 
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Missing "action" attribute on tag "controller.service_arguments" {"argument":"bar"} for service "foo".
+     * @expectedExceptionMessage Missing "action" attribute on tag "controller.service_arguments" {"argument":"bar"} for Service "foo".
      */
     public function testNoAction()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('argument' => 'bar'))
@@ -59,12 +59,12 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
 
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Missing "argument" attribute on tag "controller.service_arguments" {"action":"fooAction"} for service "foo".
+     * @expectedExceptionMessage Missing "argument" attribute on tag "controller.service_arguments" {"action":"fooAction"} for Service "foo".
      */
     public function testNoArgument()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('action' => 'fooAction'))
@@ -76,12 +76,12 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
 
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Missing "id" attribute on tag "controller.service_arguments" {"action":"fooAction","argument":"bar"} for service "foo".
+     * @expectedExceptionMessage Missing "id" attribute on tag "controller.service_arguments" {"action":"fooAction","argument":"bar"} for Service "foo".
      */
     public function testNoService()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('action' => 'fooAction', 'argument' => 'bar'))
@@ -93,12 +93,12 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
 
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Invalid "action" attribute on tag "controller.service_arguments" for service "foo": no public "barAction()" method found on class "Symfony\Component\HttpKernel\Tests\DependencyInjection\RegisterTestController".
+     * @expectedExceptionMessage Invalid "action" attribute on tag "controller.service_arguments" for Service "foo": no public "barAction()" method found on class "Symfony\Component\HttpKernel\Tests\DependencyInjection\RegisterTestController".
      */
     public function testInvalidMethod()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('action' => 'barAction', 'argument' => 'bar', 'id' => 'bar_service'))
@@ -110,12 +110,12 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
 
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Invalid "controller.service_arguments" tag for service "foo": method "fooAction()" has no "baz" argument on class "Symfony\Component\HttpKernel\Tests\DependencyInjection\RegisterTestController".
+     * @expectedExceptionMessage Invalid "controller.service_arguments" tag for Service "foo": method "fooAction()" has no "baz" argument on class "Symfony\Component\HttpKernel\Tests\DependencyInjection\RegisterTestController".
      */
     public function testInvalidArgument()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('action' => 'fooAction', 'argument' => 'baz', 'id' => 'bar'))
@@ -128,7 +128,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testAllActions()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments')
@@ -154,7 +154,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testExplicitArgument()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('action' => 'fooAction', 'argument' => 'bar', 'id' => 'bar'))
@@ -174,7 +174,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testOptionalArgument()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', RegisterTestController::class)
             ->addTag('controller.service_arguments', array('action' => 'fooAction', 'argument' => 'bar', 'id' => '?bar'))
@@ -193,7 +193,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testSkipSetContainer()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', ContainerAwareRegisterTestController::class)
             ->addTag('controller.service_arguments');
@@ -212,7 +212,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testExceptionOnNonExistentTypeHint()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', NonExistentClassController::class)
             ->addTag('controller.service_arguments');
@@ -228,7 +228,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testExceptionOnNonExistentTypeHintDifferentNamespace()
     {
         $container = new ContainerBuilder();
-        $container->register('argument_resolver.service')->addArgument(array());
+        $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', NonExistentClassDifferentNamespaceController::class)
             ->addTag('controller.service_arguments');
@@ -240,7 +240,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testNoExceptionOnNonExistentTypeHintOptionalArg()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', NonExistentClassOptionalController::class)
             ->addTag('controller.service_arguments');
@@ -255,7 +255,7 @@ class RegisterControllerArgumentLocatorsPassTest extends TestCase
     public function testArgumentWithNoTypeHintIsOk()
     {
         $container = new ContainerBuilder();
-        $resolver = $container->register('argument_resolver.service')->addArgument(array());
+        $resolver = $container->register('argument_resolver.Service')->addArgument(array());
 
         $container->register('foo', ArgumentWithoutTypeController::class)
             ->addTag('controller.service_arguments');

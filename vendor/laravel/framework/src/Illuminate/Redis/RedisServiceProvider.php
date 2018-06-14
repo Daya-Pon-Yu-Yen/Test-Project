@@ -15,7 +15,7 @@ class RedisServiceProvider extends ServiceProvider
     protected $defer = true;
 
     /**
-     * Register the service provider.
+     * Register the Service provider.
      *
      * @return void
      */

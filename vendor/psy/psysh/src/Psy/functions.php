@@ -157,7 +157,7 @@ if (!function_exists('Psy\info')) {
             $readline = array(
                 'readline available' => true,
                 'readline enabled'   => $config->useReadline(),
-                'readline service'   => get_class($config->getReadline()),
+                'readline Service'   => get_class($config->getReadline()),
             );
 
             if (isset($info['library_version'])) {

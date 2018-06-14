@@ -183,7 +183,7 @@ class MimeType
         'dfac' => 'application/vnd.dreamfactory',
         'kpxx' => 'application/vnd.ds-keypoint',
         'ait' => 'application/vnd.dvb.ait',
-        'svc' => 'application/vnd.dvb.service',
+        'svc' => 'application/vnd.dvb.Service',
         'geo' => 'application/vnd.dynageo',
         'mag' => 'application/vnd.ecowin.chart',
         'nml' => 'application/vnd.enliven',

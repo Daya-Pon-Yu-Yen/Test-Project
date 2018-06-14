@@ -51,7 +51,7 @@ trait FormatsMessages
 
         // Finally, if no developer specified messages have been set, and no other
         // special messages apply for this rule, we will just pull the default
-        // messages out of the translator service for this validation rule.
+        // messages out of the translator Service for this validation rule.
         $key = "validation.{$lowerRule}";
 
         if ($key != ($value = $this->translator->trans($key))) {

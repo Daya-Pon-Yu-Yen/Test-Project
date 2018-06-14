@@ -2456,7 +2456,7 @@ EOT;
     pseudonym, if applicable) if supplied, and/or if the Original Author
     and/or Licensor designate another party or parties (e.g., a sponsor
     institute, publishing entity, journal) for attribution ("Attribution
-    Parties") in Licensor's copyright notice, terms of service or by other
+    Parties") in Licensor's copyright notice, terms of Service or by other
     reasonable means, the name of such party or parties; (ii) the title of
     the Work if supplied; (iii) to the extent reasonably practicable, the
     URI, if any, that Licensor specifies to be associated with the Work,

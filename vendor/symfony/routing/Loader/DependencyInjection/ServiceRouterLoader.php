@@ -15,7 +15,7 @@ use Psr\Container\ContainerInterface;
 use Symfony\Component\Routing\Loader\ObjectRouteLoader;
 
 /**
- * A route loader that executes a service to load the routes.
+ * A route loader that executes a Service to load the routes.
  *
  * This depends on the DependencyInjection component.
  *

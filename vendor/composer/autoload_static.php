@@ -329,7 +329,7 @@ class ComposerStaticInit2653ec5736cb4ba68fa6d0295d221c22
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\SeoModel' => __DIR__ . '/../..' . '/app/SeoModel.php',
+        'App\\FiftyProductListRepository' => __DIR__ . '/../..',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Barryvdh\\Cors\\CorsService' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/CorsService.php',
         'Barryvdh\\Cors\\HandleCors' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandleCors.php',

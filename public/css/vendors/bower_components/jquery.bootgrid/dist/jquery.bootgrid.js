@@ -1146,7 +1146,7 @@
         post: {}, // or use function () { return {}; } (reserved properties are "current", "rowCount", "sort" and "searchPhrase")
 
         /**
-         * Sets the data URL to a data service (e.g. a REST service). Either a `String` or a `Function`
+         * Sets the data URL to a data Service (e.g. a REST Service). Either a `String` or a `Function`
          * that returns a `String` can be passed. Default value is `""`.
          *
          * @property url

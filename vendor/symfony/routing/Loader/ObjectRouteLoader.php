@@ -25,8 +25,8 @@ abstract class ObjectRouteLoader extends Loader
     /**
      * Returns the object that the method will be called on to load routes.
      *
-     * For example, if your application uses a service container,
-     * the $id may be a service id.
+     * For example, if your application uses a Service container,
+     * the $id may be a Service id.
      *
      * @param string $id
      *
@@ -35,7 +35,7 @@ abstract class ObjectRouteLoader extends Loader
     abstract protected function getServiceObject($id);
 
     /**
-     * Calls the service that will load the routes.
+     * Calls the Service that will load the routes.
      *
      * @param mixed       $resource Some value that will resolve to a callable
      * @param string|null $type     The resource type
@@ -46,7 +46,7 @@ abstract class ObjectRouteLoader extends Loader
     {
         $parts = explode(':', $resource);
         if (count($parts) != 2) {
-            throw new \InvalidArgumentException(sprintf('Invalid resource "%s" passed to the "service" route loader: use the format "service_name:methodName"', $resource));
+            throw new \InvalidArgumentException(sprintf('Invalid resource "%s" passed to the "Service" route loader: use the format "service_name:methodName"', $resource));
         }
 
         $serviceString = $parts[0];
@@ -70,7 +70,7 @@ abstract class ObjectRouteLoader extends Loader
             throw new \LogicException(sprintf('The %s::%s method must return a RouteCollection: %s returned', get_class($loaderObject), $method, $type));
         }
 
-        // make the service file tracked so that if it changes, the cache rebuilds
+        // make the Service file tracked so that if it changes, the cache rebuilds
         $this->addClassResource(new \ReflectionClass($loaderObject), $routeCollection);
 
         return $routeCollection;
@@ -81,7 +81,7 @@ abstract class ObjectRouteLoader extends Loader
      */
     public function supports($resource, $type = null)
     {
-        return 'service' === $type;
+        return 'Service' === $type;
     }
 
     private function addClassResource(\ReflectionClass $class, RouteCollection $collection)
