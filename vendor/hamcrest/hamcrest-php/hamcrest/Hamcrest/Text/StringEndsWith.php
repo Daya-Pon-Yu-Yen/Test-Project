@@ -19,7 +19,7 @@ class StringEndsWith extends SubstringMatcher
     /**
      * Matches if value is a string that ends with $substring.
      *
-     * @factory
+     * @Factory
      */
     public static function endsWith($substring)
     {

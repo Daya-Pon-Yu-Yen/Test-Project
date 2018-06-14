@@ -42,7 +42,7 @@ class IsSame extends BaseMatcher
      *   this object.
      *
      * @return \Hamcrest\Core\IsSame
-     * @factory
+     * @Factory
      */
     public static function sameInstance($object)
     {

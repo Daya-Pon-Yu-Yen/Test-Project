@@ -23,7 +23,7 @@ class Swift_CharacterStream_NgCharacterStream implements Swift_CharacterStream
     private $_charReader;
 
     /**
-     * A factory for creating CharacterReader instances.
+     * A Factory for creating CharacterReader instances.
      *
      * @var Swift_CharacterReaderFactory
      */

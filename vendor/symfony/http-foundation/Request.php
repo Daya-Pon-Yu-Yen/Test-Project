@@ -2019,7 +2019,7 @@ class Request
             $request = call_user_func(self::$requestFactory, $query, $request, $attributes, $cookies, $files, $server, $content);
 
             if (!$request instanceof self) {
-                throw new \LogicException('The Request factory must return an instance of Symfony\Component\HttpFoundation\Request.');
+                throw new \LogicException('The Request Factory must return an instance of Symfony\Component\HttpFoundation\Request.');
             }
 
             return $request;

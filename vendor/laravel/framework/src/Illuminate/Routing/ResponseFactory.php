@@ -16,7 +16,7 @@ class ResponseFactory implements FactoryContract
     use Macroable;
 
     /**
-     * The view factory instance.
+     * The view Factory instance.
      *
      * @var \Illuminate\Contracts\View\Factory
      */
@@ -30,7 +30,7 @@ class ResponseFactory implements FactoryContract
     protected $redirector;
 
     /**
-     * Create a new response factory instance.
+     * Create a new response Factory instance.
      *
      * @param  \Illuminate\Contracts\View\Factory  $view
      * @param  \Illuminate\Routing\Redirector  $redirector

@@ -48,7 +48,7 @@ class AllOf extends DiagnosingMatcher
     /**
      * Evaluates to true only if ALL of the passed in matchers evaluate to true.
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function allOf(/* args... */)
     {

@@ -35,7 +35,7 @@ class IsNot extends BaseMatcher
     /**
      * Matches if value does not match $value.
      *
-     * @factory
+     * @Factory
      */
     public static function not($value)
     {

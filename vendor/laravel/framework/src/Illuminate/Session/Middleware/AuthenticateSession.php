@@ -9,7 +9,7 @@ use Illuminate\Contracts\Auth\Factory as AuthFactory;
 class AuthenticateSession
 {
     /**
-     * The authentication factory implementation.
+     * The authentication Factory implementation.
      *
      * @var \Illuminate\Contracts\Auth\Factory
      */

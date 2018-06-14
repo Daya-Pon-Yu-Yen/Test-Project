@@ -38,7 +38,7 @@ class FingersCrossedHandler extends AbstractHandler
     protected $passthruLevel;
 
     /**
-     * @param callable|HandlerInterface       $handler            Handler or factory callable($record, $fingersCrossedHandler).
+     * @param callable|HandlerInterface       $handler            Handler or Factory callable($record, $fingersCrossedHandler).
      * @param int|ActivationStrategyInterface $activationStrategy Strategy which determines when this handler takes action
      * @param int                             $bufferSize         How many entries should be buffered at most, beyond that the oldest items are removed from the buffer.
      * @param Boolean                         $bubble             Whether the messages that are handled can bubble up the stack or not
@@ -92,7 +92,7 @@ class FingersCrossedHandler extends AbstractHandler
 
             $this->handler = call_user_func($this->handler, $record, $this);
             if (!$this->handler instanceof HandlerInterface) {
-                throw new \RuntimeException("The factory callable should return a HandlerInterface");
+                throw new \RuntimeException("The Factory callable should return a HandlerInterface");
             }
         }
         $this->handler->handleBatch($this->buffer);

@@ -38,7 +38,7 @@ class SamplingHandler extends AbstractHandler
     protected $factor;
 
     /**
-     * @param callable|HandlerInterface $handler Handler or factory callable($record, $fingersCrossedHandler).
+     * @param callable|HandlerInterface $handler Handler or Factory callable($record, $fingersCrossedHandler).
      * @param int                       $factor  Sample factor
      */
     public function __construct($handler, $factor)
@@ -64,7 +64,7 @@ class SamplingHandler extends AbstractHandler
             if (!$this->handler instanceof HandlerInterface) {
                 $this->handler = call_user_func($this->handler, $record, $this);
                 if (!$this->handler instanceof HandlerInterface) {
-                    throw new \RuntimeException("The factory callable should return a HandlerInterface");
+                    throw new \RuntimeException("The Factory callable should return a HandlerInterface");
                 }
             }
 

@@ -88,7 +88,7 @@ class RegisterListenersPass implements CompilerPassInterface
         foreach ($container->findTaggedServiceIds($this->subscriberTag, true) as $id => $attributes) {
             $def = $container->getDefinition($id);
 
-            // We must assume that the class value has been correctly filled, even if the Service is created by a factory
+            // We must assume that the class value has been correctly filled, even if the Service is created by a Factory
             $class = $container->getParameterBag()->resolveValue($def->getClass());
             $interface = 'Symfony\Component\EventDispatcher\EventSubscriberInterface';
 

@@ -729,7 +729,7 @@ var requirejs, require, define;
             this.pluginMaps = {};
             this.depCount = 0;
 
-            /* this.exports this.factory
+            /* this.exports this.Factory
                this.depMaps = [],
                this.enabled, this.fetched
             */
@@ -853,7 +853,7 @@ var requirejs, require, define;
                 } else if (this.error) {
                     this.emit('error', this.error);
                 } else if (!this.defining) {
-                    //The factory could trigger another require call
+                    //The Factory could trigger another require call
                     //that would result in checking this module to
                     //define itself again. If already in the process
                     //of doing that, skip this work.
@@ -1243,7 +1243,7 @@ var requirejs, require, define;
                     return onError(makeError('mismatch', 'Mismatched anonymous define() module: ' +
                         args[args.length - 1]));
                 } else {
-                    //args are id, deps, factory. Should be normalized by the
+                    //args are id, deps, Factory. Should be normalized by the
                     //define() function.
                     callGetModule(args);
                 }

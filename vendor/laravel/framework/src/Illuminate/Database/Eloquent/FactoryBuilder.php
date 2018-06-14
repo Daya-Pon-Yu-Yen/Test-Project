@@ -224,7 +224,7 @@ class FactoryBuilder
     {
         return Model::unguarded(function () use ($attributes) {
             if (! isset($this->definitions[$this->class][$this->name])) {
-                throw new InvalidArgumentException("Unable to locate factory with name [{$this->name}] [{$this->class}].");
+                throw new InvalidArgumentException("Unable to locate Factory with name [{$this->name}] [{$this->class}].");
             }
 
             return new $this->class(

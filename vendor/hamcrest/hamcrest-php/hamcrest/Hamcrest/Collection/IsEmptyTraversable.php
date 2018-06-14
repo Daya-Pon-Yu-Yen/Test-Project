@@ -44,7 +44,7 @@ class IsEmptyTraversable extends BaseMatcher
     /**
      * Returns true if traversable is empty.
      *
-     * @factory
+     * @Factory
      */
     public static function emptyTraversable()
     {
@@ -58,7 +58,7 @@ class IsEmptyTraversable extends BaseMatcher
     /**
      * Returns true if traversable is not empty.
      *
-     * @factory
+     * @Factory
      */
     public static function nonEmptyTraversable()
     {

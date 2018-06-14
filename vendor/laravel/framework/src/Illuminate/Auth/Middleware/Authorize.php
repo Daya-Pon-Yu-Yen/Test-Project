@@ -10,7 +10,7 @@ use Illuminate\Contracts\Auth\Factory as Auth;
 class Authorize
 {
     /**
-     * The authentication factory instance.
+     * The authentication Factory instance.
      *
      * @var \Illuminate\Contracts\Auth\Factory
      */

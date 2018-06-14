@@ -48,7 +48,7 @@ class CombinableMatcher extends BaseMatcher
      *   assertThat($string, both(containsString("a"))->andAlso(containsString("b")));
      * </pre>
      *
-     * @factory
+     * @Factory
      */
     public static function both(Matcher $matcher)
     {
@@ -62,7 +62,7 @@ class CombinableMatcher extends BaseMatcher
      *   assertThat($string, either(containsString("a"))->orElse(containsString("b")));
      * </pre>
      *
-     * @factory
+     * @Factory
      */
     public static function either(Matcher $matcher)
     {

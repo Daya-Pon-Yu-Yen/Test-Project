@@ -5,7 +5,7 @@ namespace Cron;
 use InvalidArgumentException;
 
 /**
- * CRON field factory implementing a flyweight factory
+ * CRON field Factory implementing a flyweight Factory
  * @link http://en.wikipedia.org/wiki/Cron
  */
 class FieldFactory

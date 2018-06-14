@@ -25,7 +25,7 @@ class IsDouble extends IsTypeOf
     /**
      * Is the value a float/double?
      *
-     * @factory floatValue
+     * @Factory floatValue
      */
     public static function doubleValue()
     {

@@ -22,7 +22,7 @@ namespace Symfony\Component\EventDispatcher;
  *
  * @author Guilherme Blanco <guilhermeblanco@hotmail.com>
  * @author Jonathan Wage <jonwage@gmail.com>
- * @author Roman Borschel <roman@code-factory.org>
+ * @author Roman Borschel <roman@code-Factory.org>
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class Event

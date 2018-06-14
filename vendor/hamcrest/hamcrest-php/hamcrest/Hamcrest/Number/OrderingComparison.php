@@ -56,7 +56,7 @@ class OrderingComparison extends TypeSafeMatcher
     /**
      * The value is not > $value, nor < $value.
      *
-     * @factory
+     * @Factory
      */
     public static function comparesEqualTo($value)
     {
@@ -66,7 +66,7 @@ class OrderingComparison extends TypeSafeMatcher
     /**
      * The value is > $value.
      *
-     * @factory
+     * @Factory
      */
     public static function greaterThan($value)
     {
@@ -76,7 +76,7 @@ class OrderingComparison extends TypeSafeMatcher
     /**
      * The value is >= $value.
      *
-     * @factory atLeast
+     * @Factory atLeast
      */
     public static function greaterThanOrEqualTo($value)
     {
@@ -86,7 +86,7 @@ class OrderingComparison extends TypeSafeMatcher
     /**
      * The value is < $value.
      *
-     * @factory
+     * @Factory
      */
     public static function lessThan($value)
     {
@@ -96,7 +96,7 @@ class OrderingComparison extends TypeSafeMatcher
     /**
      * The value is <= $value.
      *
-     * @factory atMost
+     * @Factory atMost
      */
     public static function lessThanOrEqualTo($value)
     {

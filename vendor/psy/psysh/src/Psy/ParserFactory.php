@@ -16,7 +16,7 @@ use PhpParser\Parser;
 use PhpParser\ParserFactory as OriginalParserFactory;
 
 /**
- * Parser factory to abstract over PHP parser library versions.
+ * Parser Factory to abstract over PHP parser library versions.
  */
 class ParserFactory
 {
@@ -26,7 +26,7 @@ class ParserFactory
     const PREFER_PHP7 = 'PREFER_PHP7';
 
     /**
-     * Possible kinds of parsers for the factory, from PHP parser library.
+     * Possible kinds of parsers for the Factory, from PHP parser library.
      *
      * @return array
      */
@@ -36,7 +36,7 @@ class ParserFactory
     }
 
     /**
-     * Is this parser factory supports kinds?
+     * Is this parser Factory supports kinds?
      *
      * PHP parser < 2.0 doesn't support kinds, >= 2.0 — does.
      *

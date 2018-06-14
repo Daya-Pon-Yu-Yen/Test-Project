@@ -71,7 +71,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Returns the UUID coder-decoder used by this factory
+     * Returns the UUID coder-decoder used by this Factory
      *
      * @return CodecInterface
      */
@@ -81,7 +81,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Sets the UUID coder-decoder used by this factory
+     * Sets the UUID coder-decoder used by this Factory
      *
      * @param CodecInterface $codec
      */
@@ -91,7 +91,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Returns the system node ID provider used by this factory
+     * Returns the system node ID provider used by this Factory
      *
      * @return NodeProviderInterface
      */
@@ -101,7 +101,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Returns the random UUID generator used by this factory
+     * Returns the random UUID generator used by this Factory
      *
      * @return RandomGeneratorInterface
      */
@@ -111,7 +111,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Returns the time-based UUID generator used by this factory
+     * Returns the time-based UUID generator used by this Factory
      *
      * @return TimeGeneratorInterface
      */
@@ -121,7 +121,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Sets the time-based UUID generator this factory will use to generate version 1 UUIDs
+     * Sets the time-based UUID generator this Factory will use to generate version 1 UUIDs
      *
      * @param TimeGeneratorInterface $generator
      */
@@ -131,7 +131,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Returns the number converter used by this factory
+     * Returns the number converter used by this Factory
      *
      * @return NumberConverterInterface
      */
@@ -141,7 +141,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Sets the random UUID generator this factory will use to generate version 4 UUIDs
+     * Sets the random UUID generator this Factory will use to generate version 4 UUIDs
      *
      * @param RandomGeneratorInterface $generator
      */
@@ -151,7 +151,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Sets the number converter this factory will use
+     * Sets the number converter this Factory will use
      *
      * @param NumberConverterInterface $converter
      */
@@ -161,7 +161,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Returns the UUID builder this factory uses when creating `Uuid` instances
+     * Returns the UUID builder this Factory uses when creating `Uuid` instances
      *
      * @return UuidBuilderInterface $builder
      */
@@ -171,7 +171,7 @@ class UuidFactory implements UuidFactoryInterface
     }
 
     /**
-     * Sets the UUID builder this factory will use when creating `Uuid` instances
+     * Sets the UUID builder this Factory will use when creating `Uuid` instances
      *
      * @param UuidBuilderInterface $builder
      */

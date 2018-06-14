@@ -8,7 +8,7 @@ use Illuminate\Contracts\Redis\Factory as Redis;
 class RedisStore extends TaggableStore implements Store
 {
     /**
-     * The Redis factory implementation.
+     * The Redis Factory implementation.
      *
      * @var \Illuminate\Contracts\Redis\Factory
      */

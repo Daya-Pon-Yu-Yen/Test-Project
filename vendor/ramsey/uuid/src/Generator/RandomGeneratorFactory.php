@@ -15,7 +15,7 @@
 namespace Ramsey\Uuid\Generator;
 
 /**
- * A factory for retrieving a random generator, based on the environment
+ * A Factory for retrieving a random generator, based on the environment
  */
 class RandomGeneratorFactory
 {

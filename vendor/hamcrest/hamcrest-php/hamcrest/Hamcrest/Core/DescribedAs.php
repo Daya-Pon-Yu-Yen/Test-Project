@@ -54,7 +54,7 @@ class DescribedAs extends BaseMatcher
     /**
      * Wraps an existing matcher and overrides the description when it fails.
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function describedAs(/* $description, Hamcrest\Matcher $matcher, $values... */)
     {

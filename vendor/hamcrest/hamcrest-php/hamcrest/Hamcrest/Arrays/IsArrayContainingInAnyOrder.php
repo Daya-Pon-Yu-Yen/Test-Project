@@ -48,7 +48,7 @@ class IsArrayContainingInAnyOrder extends TypeSafeDiagnosingMatcher
     /**
      * An array with elements that match the given matchers.
      *
-     * @factory containsInAnyOrder ...
+     * @Factory containsInAnyOrder ...
      */
     public static function arrayContainingInAnyOrder(/* args... */)
     {

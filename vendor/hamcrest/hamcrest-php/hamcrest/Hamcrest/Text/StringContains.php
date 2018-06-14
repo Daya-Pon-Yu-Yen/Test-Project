@@ -24,7 +24,7 @@ class StringContains extends SubstringMatcher
     /**
      * Matches if value is a string that contains $substring.
      *
-     * @factory
+     * @Factory
      */
     public static function containsString($substring)
     {

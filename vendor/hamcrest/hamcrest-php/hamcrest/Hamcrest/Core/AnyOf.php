@@ -33,7 +33,7 @@ class AnyOf extends ShortcutCombination
     /**
      * Evaluates to true if ANY of the passed in matchers evaluate to true.
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function anyOf(/* args... */)
     {
@@ -45,7 +45,7 @@ class AnyOf extends ShortcutCombination
     /**
      * Evaluates to false if ANY of the passed in matchers evaluate to true.
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function noneOf(/* args... */)
     {

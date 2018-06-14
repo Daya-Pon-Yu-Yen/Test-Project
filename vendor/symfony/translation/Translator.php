@@ -90,7 +90,7 @@ class Translator implements TranslatorInterface, TranslatorBagInterface
     }
 
     /**
-     * Sets the ConfigCache factory to use.
+     * Sets the ConfigCache Factory to use.
      *
      * @param ConfigCacheFactoryInterface $configCacheFactory
      */
@@ -431,7 +431,7 @@ EOF
     }
 
     /**
-     * Provides the ConfigCache factory implementation, falling back to a
+     * Provides the ConfigCache Factory implementation, falling back to a
      * default implementation if necessary.
      *
      * @return ConfigCacheFactoryInterface $configCacheFactory

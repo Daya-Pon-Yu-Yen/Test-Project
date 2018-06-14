@@ -36,7 +36,7 @@ class CronExpression
     private $cronParts;
 
     /**
-     * @var FieldFactory CRON field factory
+     * @var FieldFactory CRON field Factory
      */
     private $fieldFactory;
 
@@ -62,7 +62,7 @@ class CronExpression
      *      `@weekly` - Run once a week, midnight on Sun - 0 0 * * 0
      *      `@daily` - Run once a day, midnight - 0 0 * * *
      *      `@hourly` - Run once an hour, first minute - 0 * * * *
-     * @param FieldFactory $fieldFactory Field factory to use
+     * @param FieldFactory $fieldFactory Field Factory to use
      *
      * @return CronExpression
      */

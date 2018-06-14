@@ -48,10 +48,10 @@ class DatabaseServiceProvider extends ServiceProvider
      */
     protected function registerConnectionServices()
     {
-        // The connection factory is used to create the actual connection instances on
-        // the database. We will inject the factory into the manager so that it may
+        // The connection Factory is used to create the actual connection instances on
+        // the database. We will inject the Factory into the manager so that it may
         // make the connections while they are actually needed and not of before.
-        $this->app->singleton('db.factory', function ($app) {
+        $this->app->singleton('db.Factory', function ($app) {
             return new ConnectionFactory($app);
         });
 
@@ -59,7 +59,7 @@ class DatabaseServiceProvider extends ServiceProvider
         // connections might be managed. It also implements the connection resolver
         // interface which may be used by other components requiring connections.
         $this->app->singleton('db', function ($app) {
-            return new DatabaseManager($app, $app['db.factory']);
+            return new DatabaseManager($app, $app['db.Factory']);
         });
 
         $this->app->bind('db.connection', function ($app) {
@@ -68,7 +68,7 @@ class DatabaseServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the Eloquent factory instance in the container.
+     * Register the Eloquent Factory instance in the container.
      *
      * @return void
      */

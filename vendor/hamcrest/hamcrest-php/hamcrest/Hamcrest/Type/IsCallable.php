@@ -28,7 +28,7 @@ class IsCallable extends IsTypeOf
     /**
      * Is the value callable?
      *
-     * @factory
+     * @Factory
      */
     public static function callableValue()
     {

@@ -19,7 +19,7 @@ class MatchesPattern extends SubstringMatcher
     /**
      * Matches if value is a string that matches regular expression $pattern.
      *
-     * @factory
+     * @Factory
      */
     public static function matchesPattern($pattern)
     {

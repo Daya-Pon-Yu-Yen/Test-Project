@@ -23,7 +23,7 @@ class IsBoolean extends IsTypeOf
     /**
      * Is the value a boolean?
      *
-     * @factory boolValue
+     * @Factory boolValue
      */
     public static function booleanValue()
     {

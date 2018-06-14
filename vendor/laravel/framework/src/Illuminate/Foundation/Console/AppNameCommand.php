@@ -217,7 +217,7 @@ class AppNameCommand extends Command
     }
 
     /**
-     * Set the namespace in database factory files.
+     * Set the namespace in database Factory files.
      *
      * @return void
      */

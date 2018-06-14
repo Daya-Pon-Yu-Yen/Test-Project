@@ -41,7 +41,7 @@ class IsEmptyString extends BaseMatcher
     /**
      * Matches if value is a zero-length string.
      *
-     * @factory emptyString
+     * @Factory emptyString
      */
     public static function isEmptyString()
     {
@@ -55,7 +55,7 @@ class IsEmptyString extends BaseMatcher
     /**
      * Matches if value is null or a zero-length string.
      *
-     * @factory nullOrEmptyString
+     * @Factory nullOrEmptyString
      */
     public static function isEmptyOrNullString()
     {
@@ -72,7 +72,7 @@ class IsEmptyString extends BaseMatcher
     /**
      * Matches if value is a non-zero-length string.
      *
-     * @factory nonEmptyString
+     * @Factory nonEmptyString
      */
     public static function isNonEmptyString()
     {

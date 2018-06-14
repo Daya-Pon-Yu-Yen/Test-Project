@@ -47,7 +47,7 @@ class Every extends TypeSafeDiagnosingMatcher
      * @return \Hamcrest\Core\Every
      *   Evaluates to TRUE for a collection in which every item matches $itemMatcher
      *
-     * @factory
+     * @Factory
      */
     public static function everyItem(Matcher $itemMatcher)
     {

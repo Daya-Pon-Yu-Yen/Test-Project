@@ -48,7 +48,7 @@ class Is extends BaseMatcher
      * For example:  assertThat($cheese, equalTo($smelly))
      *          vs.  assertThat($cheese, is(equalTo($smelly)))
      *
-     * @factory
+     * @Factory
      */
     public static function is($value)
     {

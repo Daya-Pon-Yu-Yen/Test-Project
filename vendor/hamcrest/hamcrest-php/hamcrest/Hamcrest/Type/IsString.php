@@ -23,7 +23,7 @@ class IsString extends IsTypeOf
     /**
      * Is the value a string?
      *
-     * @factory
+     * @Factory
      */
     public static function stringValue()
     {

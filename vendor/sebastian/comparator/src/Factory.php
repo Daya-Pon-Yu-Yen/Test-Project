@@ -26,7 +26,7 @@ class Factory
     private static $instance;
 
     /**
-     * Constructs a new factory.
+     * Constructs a new Factory.
      */
     public function __construct()
     {

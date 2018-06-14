@@ -5,8 +5,8 @@
  */
 
 /**
- * Controls the process of extracting @factory doctags
- * and generating factory method files.
+ * Controls the process of extracting @Factory doctags
+ * and generating Factory method files.
  *
  * Uses File_Iterator to scan for PHP files.
  */
@@ -105,7 +105,7 @@ class FactoryGenerator
         $content = file_get_contents($file);
         if (preg_match('/namespace\s+(.+);/', $content, $namespace)
             && preg_match('/\n\s*class\s+(\w+)\s+extends\b/', $content, $className)
-            && preg_match('/@factory\b/', $content)
+            && preg_match('/@Factory\b/', $content)
         ) {
             return $namespace[1] . '\\' . $className[1];
         }

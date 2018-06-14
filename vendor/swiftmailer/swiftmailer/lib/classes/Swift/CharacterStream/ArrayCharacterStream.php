@@ -24,7 +24,7 @@ class Swift_CharacterStream_ArrayCharacterStream implements Swift_CharacterStrea
     /** The char reader (lazy-loaded) for the current charset */
     private $_charReader;
 
-    /** A factory for creating CharacterReader instances */
+    /** A Factory for creating CharacterReader instances */
     private $_charReaderFactory;
 
     /** The character set this stream is using */

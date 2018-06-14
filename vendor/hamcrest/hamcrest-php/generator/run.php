@@ -6,8 +6,8 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 /*
- * Generates the Hamcrest\Matchers factory class and factory functions
- * from the @factory doctags in the various matchers.
+ * Generates the Hamcrest\Matchers Factory class and Factory functions
+ * from the @Factory doctags in the various matchers.
  */
 
 define('GENERATOR_BASE', __DIR__);

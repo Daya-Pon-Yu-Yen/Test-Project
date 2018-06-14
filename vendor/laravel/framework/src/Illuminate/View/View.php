@@ -17,7 +17,7 @@ use Illuminate\Contracts\View\View as ViewContract;
 class View implements ArrayAccess, ViewContract
 {
     /**
-     * The view factory instance.
+     * The view Factory instance.
      *
      * @var \Illuminate\View\Factory
      */
@@ -275,7 +275,7 @@ class View implements ArrayAccess, ViewContract
     }
 
     /**
-     * Get the view factory instance.
+     * Get the view Factory instance.
      *
      * @return \Illuminate\View\Factory
      */

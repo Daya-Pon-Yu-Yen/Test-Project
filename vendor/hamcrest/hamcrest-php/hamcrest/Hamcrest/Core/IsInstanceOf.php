@@ -58,7 +58,7 @@ class IsInstanceOf extends DiagnosingMatcher
      * the signature of the method that sets it up, for example in
      * <code>assertThat($anObject, anInstanceOf('Thing'));</code>
      *
-     * @factory any
+     * @Factory any
      */
     public static function anInstanceOf($theClass)
     {

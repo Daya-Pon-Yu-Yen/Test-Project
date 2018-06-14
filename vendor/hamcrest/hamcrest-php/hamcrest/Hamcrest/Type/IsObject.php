@@ -23,7 +23,7 @@ class IsObject extends IsTypeOf
     /**
      * Is the value an object?
      *
-     * @factory anObject
+     * @Factory anObject
      */
     public static function objectValue()
     {

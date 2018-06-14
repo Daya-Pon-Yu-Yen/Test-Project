@@ -23,7 +23,7 @@ class IsResource extends IsTypeOf
     /**
      * Is the value a resource?
      *
-     * @factory
+     * @Factory
      */
     public static function resourceValue()
     {

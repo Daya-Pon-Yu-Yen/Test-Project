@@ -14,7 +14,7 @@ use PHPUnit_Framework_TestCase;
 class CronExpressionTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @covers Cron\CronExpression::factory
+     * @covers Cron\CronExpression::Factory
      */
     public function testFactoryRecognizesTemplates()
     {
@@ -399,7 +399,7 @@ class CronExpressionTest extends PHPUnit_Framework_TestCase
 
     /**
      * @covers Cron\CronExpression::__construct
-     * @covers Cron\CronExpression::factory
+     * @covers Cron\CronExpression::Factory
      * @covers Cron\CronExpression::isValidExpression
      * @covers Cron\CronExpression::setExpression
      * @covers Cron\CronExpression::setPart

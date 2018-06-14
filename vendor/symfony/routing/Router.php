@@ -227,9 +227,9 @@ class Router implements RouterInterface, RequestMatcherInterface
     }
 
     /**
-     * Sets the ConfigCache factory to use.
+     * Sets the ConfigCache Factory to use.
      *
-     * @param ConfigCacheFactoryInterface $configCacheFactory The factory to use
+     * @param ConfigCacheFactoryInterface $configCacheFactory The Factory to use
      */
     public function setConfigCacheFactory(ConfigCacheFactoryInterface $configCacheFactory)
     {
@@ -372,7 +372,7 @@ class Router implements RouterInterface, RequestMatcherInterface
     }
 
     /**
-     * Provides the ConfigCache factory implementation, falling back to a
+     * Provides the ConfigCache Factory implementation, falling back to a
      * default implementation if necessary.
      *
      * @return ConfigCacheFactoryInterface $configCacheFactory

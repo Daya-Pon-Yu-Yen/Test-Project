@@ -54,7 +54,7 @@ class IsArrayContaining extends TypeSafeMatcher
      * @param mixed $item as a {@link Hamcrest\Matcher} or a value.
      *
      * @return \Hamcrest\Arrays\IsArrayContaining
-     * @factory hasValue
+     * @Factory hasValue
      */
     public static function hasItemInArray($item)
     {

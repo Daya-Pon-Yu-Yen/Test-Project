@@ -11,7 +11,7 @@ use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 class Markdown
 {
     /**
-     * The view factory implementation.
+     * The view Factory implementation.
      *
      * @var \Illuminate\View\Factory
      */

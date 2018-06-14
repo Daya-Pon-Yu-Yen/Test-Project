@@ -29,7 +29,7 @@ class IsIdentical extends IsSame
     /**
      * Tests of the value is identical to $value as tested by the "===" operator.
      *
-     * @factory
+     * @Factory
      */
     public static function identicalTo($value)
     {

@@ -186,7 +186,7 @@ class AuthManager implements FactoryContract
     }
 
     /**
-     * Set the default guard driver the factory should serve.
+     * Set the default guard driver the Factory should serve.
      *
      * @param  string  $name
      * @return void

@@ -45,7 +45,7 @@ class IsEqualIgnoringWhiteSpace extends TypeSafeMatcher
     /**
      * Matches if value is a string equal to $string, regardless of whitespace.
      *
-     * @factory
+     * @Factory
      */
     public static function equalToIgnoringWhiteSpace($string)
     {

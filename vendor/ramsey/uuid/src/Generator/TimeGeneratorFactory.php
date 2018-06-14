@@ -19,7 +19,7 @@ use Ramsey\Uuid\Provider\NodeProviderInterface;
 use Ramsey\Uuid\Provider\TimeProviderInterface;
 
 /**
- * A factory for retrieving a time generator, based on the environment
+ * A Factory for retrieving a time generator, based on the environment
  */
 class TimeGeneratorFactory
 {

@@ -76,7 +76,7 @@ class Set extends BaseMatcher
     /**
      * Matches if value (class, object, or array) has named $property.
      *
-     * @factory
+     * @Factory
      */
     public static function set($property)
     {
@@ -86,7 +86,7 @@ class Set extends BaseMatcher
     /**
      * Matches if value (class, object, or array) does not have named $property.
      *
-     * @factory
+     * @Factory
      */
     public static function notSet($property)
     {

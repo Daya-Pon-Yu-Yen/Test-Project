@@ -5,7 +5,7 @@
  */
 
 /**
- * Represents a single static factory method from a {@link Matcher} class.
+ * Represents a single static Factory method from a {@link Matcher} class.
  *
  * @todo Search method in file contents for func_get_args() to replace factoryVarArgs.
  */
@@ -95,7 +95,7 @@ class FactoryMethod
 
     public function extractFactoryNamesFromLine($line)
     {
-        if (preg_match('/^\s*@factory(\s+(.+))?$/', $line, $match)) {
+        if (preg_match('/^\s*@Factory(\s+(.+))?$/', $line, $match)) {
             $this->createCalls(
                 $this->extractFactoryNamesFromAnnotation(
                     isset($match[2]) ? trim($match[2]) : null

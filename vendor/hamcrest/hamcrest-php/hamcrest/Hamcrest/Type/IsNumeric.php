@@ -25,7 +25,7 @@ class IsNumeric extends IsTypeOf
     /**
      * Is the value a numeric?
      *
-     * @factory
+     * @Factory
      */
     public static function numericValue()
     {

@@ -21,7 +21,7 @@ class DatabaseManager implements ConnectionResolverInterface
     protected $app;
 
     /**
-     * The database connection factory instance.
+     * The database connection Factory instance.
      *
      * @var \Illuminate\Database\Connectors\ConnectionFactory
      */

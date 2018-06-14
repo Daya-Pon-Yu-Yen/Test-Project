@@ -31,7 +31,7 @@ class Swift_Mime_SimpleHeaderSet implements Swift_Mime_HeaderSet
     private $_charset;
 
     /**
-     * Create a new SimpleHeaderSet with the given $factory.
+     * Create a new SimpleHeaderSet with the given $Factory.
      *
      * @param Swift_Mime_HeaderFactory $factory
      * @param string                   $charset

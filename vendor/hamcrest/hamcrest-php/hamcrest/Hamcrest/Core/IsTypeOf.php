@@ -62,7 +62,7 @@ class IsTypeOf extends BaseMatcher
     /**
      * Is the value a particular built-in type?
      *
-     * @factory
+     * @Factory
      */
     public static function typeOf($theType)
     {

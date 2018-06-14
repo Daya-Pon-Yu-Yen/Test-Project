@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 
-use App\Http\Service\ChinSin;
-use App\Http\Service\Fifty;
-use App\Http\Service\TeaShop;
+use App\Http\Factory\ShopFactory;
 
 class TestController extends Controller
 {
@@ -13,19 +11,10 @@ class TestController extends Controller
 //    private $name='chinSin';
 //    private $name='teaShop';
     /**
-     * @return []
+     * @return array
      */
     public function index()
     {
-        switch ($this->name){
-            case 'fifty':
-                return Fifty::productList();
-            case 'chinSin':
-                return ChinSin::productList();
-            case 'teaShop':
-                return TeaShop::productList();
-            default:
-                return [];
-        }
+        return ShopFactory::shop($this->name);
     }
 }

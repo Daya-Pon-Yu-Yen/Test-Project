@@ -51,7 +51,7 @@ class IsCloseTo extends TypeSafeMatcher
      * Matches if value is a number equal to $value within some range of
      * acceptable error $delta.
      *
-     * @factory
+     * @Factory
      */
     public static function closeTo($value, $delta)
     {

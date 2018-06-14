@@ -19,7 +19,7 @@ class StringStartsWith extends SubstringMatcher
     /**
      * Matches if value is a string that starts with $substring.
      *
-     * @factory
+     * @Factory
      */
     public static function startsWith($substring)
     {

@@ -43,7 +43,7 @@ class IsEqualIgnoringCase extends TypeSafeMatcher
     /**
      * Matches if value is a string equal to $string, regardless of the case.
      *
-     * @factory
+     * @Factory
      */
     public static function equalToIgnoringCase($string)
     {

@@ -58,7 +58,7 @@ class IsCollectionContaining extends TypeSafeMatcher
      * assertThat(array('a', 'b'), hasItem('b'));
      * </pre>
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function hasItem()
     {
@@ -77,7 +77,7 @@ class IsCollectionContaining extends TypeSafeMatcher
      * assertThat(array('a', 'b', 'c'), hasItems(equalTo('a'), equalTo('b')));
      * </pre>
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function hasItems(/* args... */)
     {

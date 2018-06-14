@@ -46,7 +46,7 @@ class IsArrayContainingInOrder extends TypeSafeDiagnosingMatcher
     /**
      * An array with elements that match the given matchers in the same order.
      *
-     * @factory contains ...
+     * @Factory contains ...
      */
     public static function arrayContaining(/* args... */)
     {

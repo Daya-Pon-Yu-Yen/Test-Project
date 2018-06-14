@@ -23,7 +23,7 @@ class IsArray extends IsTypeOf
     /**
      * Is the value an array?
      *
-     * @factory
+     * @Factory
      */
     public static function arrayValue()
     {

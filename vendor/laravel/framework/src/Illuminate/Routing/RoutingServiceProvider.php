@@ -138,7 +138,7 @@ class RoutingServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the response factory implementation.
+     * Register the response Factory implementation.
      *
      * @return void
      */

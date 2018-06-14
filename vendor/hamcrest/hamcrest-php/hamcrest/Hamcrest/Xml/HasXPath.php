@@ -180,7 +180,7 @@ class HasXPath extends DiagnosingMatcher
      * if it's not a matcher and the XPath in <code>count()</code>
      * if it's an integer.
      *
-     * @factory
+     * @Factory
      */
     public static function hasXPath($xpath, $matcher = null)
     {

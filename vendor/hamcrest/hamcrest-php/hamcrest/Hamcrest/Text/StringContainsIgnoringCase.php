@@ -19,7 +19,7 @@ class StringContainsIgnoringCase extends SubstringMatcher
     /**
      * Matches if value is a string that contains $substring regardless of the case.
      *
-     * @factory
+     * @Factory
      */
     public static function containsStringIgnoringCase($substring)
     {

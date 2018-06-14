@@ -9,7 +9,7 @@ use Illuminate\Contracts\View\Factory as ViewFactory;
 class ShareErrorsFromSession
 {
     /**
-     * The view factory implementation.
+     * The view Factory implementation.
      *
      * @var \Illuminate\Contracts\View\Factory
      */

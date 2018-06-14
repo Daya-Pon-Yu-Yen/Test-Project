@@ -43,7 +43,7 @@
 			}
 
 			if ( ! $ ) {
-				$ = typeof window !== 'undefined' ? // jQuery's factory checks for a global window
+				$ = typeof window !== 'undefined' ? // jQuery's Factory checks for a global window
 					require('jquery') :
 					require('jquery')( root );
 			}

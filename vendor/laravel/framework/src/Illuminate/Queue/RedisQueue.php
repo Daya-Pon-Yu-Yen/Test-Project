@@ -11,7 +11,7 @@ use Illuminate\Contracts\Queue\Queue as QueueContract;
 class RedisQueue extends Queue implements QueueContract
 {
     /**
-     * The Redis factory implementation.
+     * The Redis Factory implementation.
      *
      * @var \Illuminate\Contracts\Redis\Factory
      */

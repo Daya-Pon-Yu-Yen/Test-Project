@@ -23,7 +23,7 @@ class IsInteger extends IsTypeOf
     /**
      * Is the value an integer?
      *
-     * @factory intValue
+     * @Factory intValue
      */
     public static function integerValue()
     {

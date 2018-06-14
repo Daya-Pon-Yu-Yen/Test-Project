@@ -24,7 +24,7 @@ use Monolog\Logger;
 class FilterHandler extends AbstractHandler
 {
     /**
-     * Handler or factory callable($record, $this)
+     * Handler or Factory callable($record, $this)
      *
      * @var callable|\Monolog\Handler\HandlerInterface
      */
@@ -45,7 +45,7 @@ class FilterHandler extends AbstractHandler
     protected $bubble;
 
     /**
-     * @param callable|HandlerInterface $handler        Handler or factory callable($record, $this).
+     * @param callable|HandlerInterface $handler        Handler or Factory callable($record, $this).
      * @param int|array                 $minLevelOrList A list of levels to accept or a minimum level if maxLevel is provided
      * @param int                       $maxLevel       Maximum level to accept, only used if $minLevelOrList is not an array
      * @param Boolean                   $bubble         Whether the messages that are handled can bubble up the stack or not
@@ -108,7 +108,7 @@ class FilterHandler extends AbstractHandler
         if (!$this->handler instanceof HandlerInterface) {
             $this->handler = call_user_func($this->handler, $record, $this);
             if (!$this->handler instanceof HandlerInterface) {
-                throw new \RuntimeException("The factory callable should return a HandlerInterface");
+                throw new \RuntimeException("The Factory callable should return a HandlerInterface");
             }
         }
 

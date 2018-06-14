@@ -77,7 +77,7 @@ abstract class AbstractPaginator implements Htmlable
     protected static $currentPageResolver;
 
     /**
-     * The view factory resolver callback.
+     * The view Factory resolver callback.
      *
      * @var \Closure
      */
@@ -406,7 +406,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Get an instance of the view factory from the resolver.
+     * Get an instance of the view Factory from the resolver.
      *
      * @return \Illuminate\Contracts\View\Factory
      */
@@ -416,7 +416,7 @@ abstract class AbstractPaginator implements Htmlable
     }
 
     /**
-     * Set the view factory resolver callback.
+     * Set the view Factory resolver callback.
      *
      * @param  \Closure  $resolver
      * @return void

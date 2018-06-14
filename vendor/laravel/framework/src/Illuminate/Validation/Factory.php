@@ -74,7 +74,7 @@ class Factory implements FactoryContract
     protected $resolver;
 
     /**
-     * Create a new Validator factory instance.
+     * Create a new Validator Factory instance.
      *
      * @param  \Illuminate\Contracts\Translation\Translator $translator
      * @param  \Illuminate\Contracts\Container\Container  $container

@@ -35,7 +35,7 @@ class IsEqual extends BaseMatcher
      * Is the value equal to another value, as tested by the use of the "=="
      * comparison operator?
      *
-     * @factory
+     * @Factory
      */
     public static function equalTo($item)
     {

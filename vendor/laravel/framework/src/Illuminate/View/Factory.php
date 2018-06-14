@@ -81,7 +81,7 @@ class Factory implements FactoryContract
     protected $renderCount = 0;
 
     /**
-     * Create a new view factory instance.
+     * Create a new view Factory instance.
      *
      * @param  \Illuminate\View\Engines\EngineResolver  $engines
      * @param  \Illuminate\View\ViewFinderInterface  $finder
@@ -401,7 +401,7 @@ class Factory implements FactoryContract
     }
 
     /**
-     * Flush all of the factory state like sections and stacks.
+     * Flush all of the Factory state like sections and stacks.
      *
      * @return void
      */

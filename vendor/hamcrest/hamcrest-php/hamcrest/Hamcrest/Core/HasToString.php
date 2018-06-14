@@ -47,7 +47,7 @@ class HasToString extends FeatureMatcher
     /**
      * Does array size satisfy a given matcher?
      *
-     * @factory
+     * @Factory
      */
     public static function hasToString($matcher)
     {

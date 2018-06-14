@@ -20,7 +20,7 @@ class Mailer implements MailerContract, MailQueueContract
     use Macroable;
 
     /**
-     * The view factory instance.
+     * The view Factory instance.
      *
      * @var \Illuminate\Contracts\View\Factory
      */
@@ -491,7 +491,7 @@ class Mailer implements MailerContract, MailQueueContract
     }
 
     /**
-     * Get the view factory instance.
+     * Get the view Factory instance.
      *
      * @return \Illuminate\Contracts\View\Factory
      */

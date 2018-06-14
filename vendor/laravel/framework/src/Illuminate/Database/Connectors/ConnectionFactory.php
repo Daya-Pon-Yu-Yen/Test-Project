@@ -23,7 +23,7 @@ class ConnectionFactory
     protected $container;
 
     /**
-     * Create a new connection factory instance.
+     * Create a new connection Factory instance.
      *
      * @param  \Illuminate\Contracts\Container\Container  $container
      * @return void

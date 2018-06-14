@@ -38,7 +38,7 @@ class IsTraversableWithSize extends FeatureMatcher
     /**
      * Does traversable size satisfy a given matcher?
      *
-     * @factory
+     * @Factory
      */
     public static function traversableWithSize($size)
     {

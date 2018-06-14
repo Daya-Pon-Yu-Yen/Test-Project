@@ -8,7 +8,7 @@ use Illuminate\Contracts\Auth\Factory as AuthFactory;
 class AuthenticateWithBasicAuth
 {
     /**
-     * The guard factory instance.
+     * The guard Factory instance.
      *
      * @var \Illuminate\Contracts\Auth\Factory
      */

@@ -25,7 +25,7 @@ class IsScalar extends IsTypeOf
     /**
      * Is the value a scalar (boolean, integer, double, or string)?
      *
-     * @factory
+     * @Factory
      */
     public static function scalarValue()
     {

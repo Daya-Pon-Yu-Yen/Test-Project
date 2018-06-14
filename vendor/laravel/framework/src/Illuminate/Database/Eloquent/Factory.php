@@ -30,7 +30,7 @@ class Factory implements ArrayAccess
     protected $faker;
 
     /**
-     * Create a new factory instance.
+     * Create a new Factory instance.
      *
      * @param  \Faker\Generator  $faker
      * @return void
@@ -41,7 +41,7 @@ class Factory implements ArrayAccess
     }
 
     /**
-     * Create a new factory container.
+     * Create a new Factory container.
      *
      * @param  \Faker\Generator  $faker
      * @param  string|null  $pathToFactories

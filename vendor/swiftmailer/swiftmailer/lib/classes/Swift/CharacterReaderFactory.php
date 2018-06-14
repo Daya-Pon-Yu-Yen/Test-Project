@@ -9,7 +9,7 @@
  */
 
 /**
- * A factory for creating CharacterReaders.
+ * A Factory for creating CharacterReaders.
  *
  * @author Chris Corbyn
  */

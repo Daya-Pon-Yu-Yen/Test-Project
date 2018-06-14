@@ -119,7 +119,7 @@ class RedisJob extends Job implements JobContract
     }
 
     /**
-     * Get the underlying Redis factory implementation.
+     * Get the underlying Redis Factory implementation.
      *
      * @return \Illuminate\Contracts\Redis\Factory
      */

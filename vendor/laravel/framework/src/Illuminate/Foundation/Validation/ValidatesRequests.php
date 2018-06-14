@@ -157,7 +157,7 @@ trait ValidatesRequests
     }
 
     /**
-     * Get a validation factory instance.
+     * Get a validation Factory instance.
      *
      * @return \Illuminate\Contracts\Validation\Factory
      */

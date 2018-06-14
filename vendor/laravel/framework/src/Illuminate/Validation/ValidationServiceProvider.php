@@ -26,7 +26,7 @@ class ValidationServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the validation factory.
+     * Register the validation Factory.
      *
      * @return void
      */

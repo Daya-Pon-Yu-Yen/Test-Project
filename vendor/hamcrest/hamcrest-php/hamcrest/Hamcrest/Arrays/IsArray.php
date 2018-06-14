@@ -90,7 +90,7 @@ class IsArray extends TypeSafeMatcher
     /**
      * Evaluates to true only if each $matcher[$i] is satisfied by $array[$i].
      *
-     * @factory ...
+     * @Factory ...
      */
     public static function anArray(/* args... */)
     {

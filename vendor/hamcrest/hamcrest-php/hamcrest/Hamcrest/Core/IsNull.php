@@ -29,7 +29,7 @@ class IsNull extends BaseMatcher
     /**
      * Matches if value is null.
      *
-     * @factory
+     * @Factory
      */
     public static function nullValue()
     {
@@ -43,7 +43,7 @@ class IsNull extends BaseMatcher
     /**
      * Matches if value is not null.
      *
-     * @factory
+     * @Factory
      */
     public static function notNullValue()
     {

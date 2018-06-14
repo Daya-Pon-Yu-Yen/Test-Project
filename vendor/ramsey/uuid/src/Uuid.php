@@ -121,7 +121,7 @@ class Uuid implements UuidInterface
     const UUID_TYPE_HASH_SHA1 = 5;
 
     /**
-     * The factory to use when creating UUIDs.
+     * The Factory to use when creating UUIDs.
      * @var UuidFactoryInterface
      */
     private static $factory = null;
@@ -584,7 +584,7 @@ class Uuid implements UuidInterface
     }
 
     /**
-     * Returns the currently set factory used to create UUIDs.
+     * Returns the currently set Factory used to create UUIDs.
      *
      * @return UuidFactoryInterface
      */
@@ -598,7 +598,7 @@ class Uuid implements UuidInterface
     }
 
     /**
-     * Sets the factory used to create UUIDs.
+     * Sets the Factory used to create UUIDs.
      *
      * @param UuidFactoryInterface $factory
      */
