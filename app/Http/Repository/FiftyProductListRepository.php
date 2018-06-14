@@ -12,7 +12,7 @@ class FiftyProductListRepository extends Model
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public static function getProductList(){
-        $list=FiftyProductListRepository::get();
+        $list=FiftyProductListRepository::all();
         return $list;
     }
 }

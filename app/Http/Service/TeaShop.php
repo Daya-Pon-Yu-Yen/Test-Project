@@ -2,10 +2,21 @@
 
 namespace App\Http\Service;
 
+use App\Http\Repository\TeaShopProductListRepository;
+
 class TeaShop
 {
 
-        public function blackTea(){
-            return 15;
+    /**
+     * @return array
+     */
+    public static function productList(){
+            $list=[];
+            $teaShop=TeaShopProductListRepository::getProductList();
+            foreach ($teaShop as $row){
+                $list['productName'][]=$row->produt_name;
+                $list['price'][]=$row->price;
+            }
+            return $list;
         }
 }

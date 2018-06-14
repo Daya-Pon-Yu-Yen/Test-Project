@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Repository\ChinSinProductListRepository;
-use App\Http\Repository\FiftyProductListRepository;
-use App\Http\Repository\TeaShopProductListRepository;
+
+use App\Http\Service\ChinSin;
+use App\Http\Service\Fifty;
+use App\Http\Service\TeaShop;
 
 class TestController extends Controller
 {
@@ -12,35 +13,19 @@ class TestController extends Controller
 //    private $name='chinSin';
 //    private $name='teaShop';
     /**
-     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     * @return []
      */
     public function index()
     {
-        $list=[];
         switch ($this->name){
             case 'fifty':
-                $fifty=FiftyProductListRepository::getProductList();
-                foreach ($fifty as $row){
-                    $list['productName'][]=$row->produt_name;
-                    $list['price']=$row->price;
-                }
-                return $list;
+                return Fifty::productList();
             case 'chinSin':
-                $chinSin=ChinSinProductListRepository::getProductList();
-                foreach ($chinSin as $row){
-                    $list['productName'][]=$row->produt_name;
-                    $list['price']=$row->price;
-                }
-                return $list;
+                return ChinSin::productList();
             case 'teaShop':
-                $teaShop=TeaShopProductListRepository::getProductList();
-                foreach ($teaShop as $row){
-                    $list['productName'][]=$row->produt_name;
-                    $list['price']=$row->price;
-                }
-                return $list;
+                return TeaShop::productList();
             default:
-                return $list;
+                return [];
         }
     }
 }
