@@ -176,6 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ShopServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
 //        Barryvdh\Cors\ServiceProvider::class,
     ],

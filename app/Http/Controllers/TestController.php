@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Http\Factory\ShopFactory;
+use App\Http\Service\ShopService;
 
 class TestController extends Controller
 {
@@ -15,6 +14,6 @@ class TestController extends Controller
      */
     public function index()
     {
-        return ShopFactory::shop($this->name);
+        return ShopService::shop($this->name);
     }
 }

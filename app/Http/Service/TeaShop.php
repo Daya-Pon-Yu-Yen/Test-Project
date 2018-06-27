@@ -4,19 +4,14 @@ namespace App\Http\Service;
 
 use App\Http\Repository\TeaShopProductListRepository;
 
-class TeaShop
+class TeaShop extends ProductListAbstract
 {
 
     /**
      * @return array
      */
-    public static function productList(){
-            $list=[];
-            $teaShop=TeaShopProductListRepository::getProductList();
-            foreach ($teaShop as $row){
-                $list['productName'][]=$row->produt_name;
-                $list['price'][]=$row->price;
-            }
-            return $list;
-        }
+    public function productList(){
+        $teaShop=TeaShopProductListRepository::getProductList();
+        return $this->list($teaShop);
+     }
 }

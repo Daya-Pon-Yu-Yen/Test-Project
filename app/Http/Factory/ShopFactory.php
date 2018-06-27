@@ -16,10 +16,11 @@ class ShopFactory
      */
    public static function shop(string $name){
        $shop=[
-           'fifty'=>Fifty::productList(),
-           'chinSin'=>ChinSin::productList(),
-           'teaShop'=>TeaShop::productList()
+           'fifty'=>Fifty::class,
+           'chinSin'=>ChinSin::class,
+           'teaShop'=>TeaShop::class
        ];
+
        return $shop[$name];
    }
 }

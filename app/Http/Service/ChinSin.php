@@ -4,18 +4,13 @@ namespace App\Http\Service;
 
 use App\Http\Repository\ChinSinProductListRepository;
 
-class ChinSin
+class ChinSin extends ProductListAbstract
 {
     /**
      * @return array
      */
-    public static function productList(){
-            $list=[];
+    public function productList(){
             $chinSin=ChinSinProductListRepository::getProductList();
-            foreach ($chinSin as $row){
-                $list['productName'][]=$row->produt_name;
-                $list['price'][]=$row->price;
-            }
-            return $list;
+            return $this->list($chinSin);
         }
 }
